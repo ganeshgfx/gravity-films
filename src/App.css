@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap");
+:root {
+	color-scheme: dark;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Albert Sans", sans-serif !important;
+	/* background-color: #171717;
+  color: #ffffff; */
+}
+.gradient {
+	background: linear-gradient(-45deg, #7e1717, #8b1874, #071952, #17594a);
+	background-size: 400% 400%;
+	animation: gradient 15s ease-in-out infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.main-logo {
+	height: 200pt;
+}
+.main-text-1 {
+	font-size: 5em;
+	letter-spacing: 0.3em;
+}
+.main-text-2 {
+	font-size: 2em;
+	letter-spacing: 0.55em;
+	transform: translateY(-10px);
+}
+@media only screen and (max-width: 526px) {
+	.main-logo {
+		height: 150pt;
+	}
+	.main-text-1 {
+		font-size: 3em;
+		letter-spacing: 0.3em;
+	}
+	.main-text-2 {
+		font-size: 1em;
+		letter-spacing: 0.55em;
+		transform: translateY(-10px);
+	}
+}
+@media only screen and (max-width: 526px) {
+	.main-logo {
+		height: 130pt;
+	}
+	.main-text-1 {
+		font-size: 2em;
+		letter-spacing: 0.3em;
+	}
+}
