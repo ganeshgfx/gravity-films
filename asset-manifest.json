@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/gravity/static/css/main.44c9304f.css",
-    "main.js": "/gravity/static/js/main.a45802e5.js",
-    "static/js/787.c840e9dd.chunk.js": "/gravity/static/js/787.c840e9dd.chunk.js",
-    "static/media/logo.svg": "/gravity/static/media/logo.6d00c594122dc8d65ec1a559a2681675.svg",
-    "static/media/Blogo.svg": "/gravity/static/media/Blogo.99fccb135734994f564ec3fb63a62202.svg",
-    "index.html": "/gravity/index.html",
-    "main.44c9304f.css.map": "/gravity/static/css/main.44c9304f.css.map",
-    "main.a45802e5.js.map": "/gravity/static/js/main.a45802e5.js.map",
-    "787.c840e9dd.chunk.js.map": "/gravity/static/js/787.c840e9dd.chunk.js.map"
+    "main.css": "/gravity-films/static/css/main.44c9304f.css",
+    "main.js": "/gravity-films/static/js/main.a0be05ce.js",
+    "static/js/787.c840e9dd.chunk.js": "/gravity-films/static/js/787.c840e9dd.chunk.js",
+    "static/media/logo.svg": "/gravity-films/static/media/logo.6d00c594122dc8d65ec1a559a2681675.svg",
+    "static/media/Blogo.svg": "/gravity-films/static/media/Blogo.99fccb135734994f564ec3fb63a62202.svg",
+    "index.html": "/gravity-films/index.html",
+    "main.44c9304f.css.map": "/gravity-films/static/css/main.44c9304f.css.map",
+    "main.a0be05ce.js.map": "/gravity-films/static/js/main.a0be05ce.js.map",
+    "787.c840e9dd.chunk.js.map": "/gravity-films/static/js/787.c840e9dd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44c9304f.css",
-    "static/js/main.a45802e5.js"
+    "static/js/main.a0be05ce.js"
   ]
 }
