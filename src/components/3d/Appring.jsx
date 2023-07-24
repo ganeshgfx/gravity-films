@@ -10,15 +10,13 @@ import { useFrame } from "@react-three/fiber";
 
 export function Appring(props) {
 	const ref = useRef();
-	const { nodes, materials } = useGLTF(
-		"/gravity-films/appring-transformed.glb"
-	);
+	const { nodes, materials } = useGLTF("/appring-transformed.glb");
 	useFrame((state, delta) => (ref.current.rotation.y += 0.01));
 	useFrame((state, delta) => (ref.current.rotation.x = 1.5708));
 
 	const texture = useCubeTexture(
 		["px.png", "nx.png", "py.png", "ny.png", "pz.png", "nz.png"],
-		{ path: "/gravity-films/" }
+		{ path: "/" }
 	);
 	return (
 		<group {...props} scale={1.9} ref={ref} dispose={null}>
@@ -29,4 +27,4 @@ export function Appring(props) {
 	);
 }
 
-useGLTF.preload("/gravity-films/appring-transformed.glb");
+useGLTF.preload("/appring-transformed.glb");
