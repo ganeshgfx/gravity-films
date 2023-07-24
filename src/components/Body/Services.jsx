@@ -17,14 +17,13 @@ import {
 	Diversity1TwoTone,
 	SellTwoTone,
 } from "@mui/icons-material";
-import { Canvas } from "@react-three/fiber";
-import Cylinder3d from "../3d/Cylinder3d";
+
 export default function Services() {
 	return (
 		<div>
 			<Typography gutterBottom>
-				<Box sx={{ fontWeight: 300, fontSize: "h3.fontSize" }}>
-					Our Services
+				<Box sx={{ fontWeight: 270, fontSize: "h4.fontSize" }}>
+					OUR SERVICES
 				</Box>
 			</Typography>
 			<div className="d-flex">
@@ -33,14 +32,7 @@ export default function Services() {
 					style={{
 						backgroundColor: "transparent",
 					}}
-				>
-					<Canvas>
-						<pointLight position={[10, 10, 10]} />
-						<ambientLight />
-						<Cylinder3d position={[-1.2, 0, 0]} />
-						<Cylinder3d position={[1.2, 0, 0]} />
-					</Canvas>
-				</div>
+				></div>
 				<div>
 					<List>
 						<ListItem>
