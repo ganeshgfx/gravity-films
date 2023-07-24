@@ -10,11 +10,11 @@ import { useFrame } from "@react-three/fiber";
 
 export function Planet(props) {
 	const ref = useRef();
-	const { nodes, materials } = useGLTF("/planet-transformed.glb");
+	const { nodes, materials } = useGLTF("/gravity-films/planet-transformed.glb");
 	useFrame((state, delta) => (ref.current.rotation.x = 1.5708));
 	const texture = useCubeTexture(
 		["px.png", "nx.png", "py.png", "ny.png", "pz.png", "nz.png"],
-		{ path: "/" }
+		{ path: "/gravity-films/" }
 	);
 	return (
 		<group {...props} scale={1.9} ref={ref} dispose={null}>
@@ -25,4 +25,4 @@ export function Planet(props) {
 	);
 }
 
-useGLTF.preload("/planet-transformed.glb");
+useGLTF.preload("/gravity-films/planet-transformed.glb");

@@ -10,13 +10,13 @@ import { useFrame } from "@react-three/fiber";
 
 export function Ring(props) {
 	const ref = useRef();
-	const { nodes, materials } = useGLTF("/Ring-transformed.glb");
+	const { nodes, materials } = useGLTF("/gravity-films/Ring-transformed.glb");
 	useFrame((state, delta) => (ref.current.rotation.z += 0.01));
 	useFrame((state, delta) => (ref.current.rotation.y += 0.01));
 	useFrame((state, delta) => (ref.current.rotation.x += 0.01));
 	const texture = useCubeTexture(
 		["px.png", "nx.png", "py.png", "ny.png", "pz.png", "nz.png"],
-		{ path: "/" }
+		{ path: "/gravity-films/" }
 	);
 	return (
 		<group {...props} ref={ref} scale={1.5} dispose={null}>
@@ -27,4 +27,4 @@ export function Ring(props) {
 	);
 }
 
-useGLTF.preload("/Ring-transformed.glb");
+useGLTF.preload("/gravity-films/Ring-transformed.glb");
