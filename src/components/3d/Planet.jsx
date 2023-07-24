@@ -17,7 +17,7 @@ export function Planet(props) {
 		{ path: "/" }
 	);
 	return (
-		<group {...props} scale={1.9} ref={ref} dispose={null}>
+		<group {...props} scale={1.7} ref={ref} dispose={null}>
 			<mesh geometry={nodes.planet.geometry} material={materials.Material}>
 				<meshStandardMaterial envMap={texture} metalness={1} roughness={0.07} />
 			</mesh>

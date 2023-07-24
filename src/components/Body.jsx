@@ -24,7 +24,7 @@ function Body() {
 						alt="Gravity Films Brand"
 						className="container pt-5 main-logo"
 					/> */}
-					<div style={{ height: "300pt" }}>
+					<div>
 						<Canvas>
 							<ambientLight />
 							<pointLight position={[5, 5, 5]} intensity={1} />

@@ -19,7 +19,7 @@ export function Ring(props) {
 		{ path: "/" }
 	);
 	return (
-		<group {...props} ref={ref} scale={1.5} dispose={null}>
+		<group {...props} ref={ref} scale={1.4} dispose={null}>
 			<mesh geometry={nodes.Ring.geometry} material={materials.Material}>
 				<meshStandardMaterial envMap={texture} metalness={1} roughness={0.07} />
 			</mesh>
