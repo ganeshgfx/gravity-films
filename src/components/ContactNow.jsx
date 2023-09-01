@@ -4,6 +4,7 @@ import SpeedDial from "@mui/material/SpeedDial";
 import SpeedDialIcon from "@mui/material/SpeedDialIcon";
 import SpeedDialAction from "@mui/material/SpeedDialAction";
 import { Instagram, WhatsApp, EmailTwoToneIcon } from "@mui/icons-material";
+import { NavLink } from "react-router-dom";
 const actions = [
 	{ icon: <Instagram />, name: "Instagram" },
 	{ icon: <WhatsApp />, name: " WhatsApp" },

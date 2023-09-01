@@ -4,11 +4,13 @@ import Services from "./Body/Services";
 import Background from "./UI/Background";
 import { Suspense } from "react";
 
-import { Appring } from "./3d/Appring";
-import { Planet } from "./3d/Planet";
-import { Ring } from "./3d/Ring";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
+import Gravity from "./3d/Gravity";
+import { NavLink, Route, Router, Routes } from "react-router-dom";
+import About from "./about/About";
+import AboutCarousel from "./about/AboutCarousel";
+import WorkSampleCarousel from "./work/WorkSampleCarousel";
 
 function Body() {
 	return (
@@ -24,14 +26,12 @@ function Body() {
 						alt="Gravity Films Brand"
 						className="container pt-5 main-logo"
 					/> */}
-					<div>
+					<div className="main-logo">
 						<Canvas>
 							<ambientLight />
 							<pointLight position={[5, 5, 5]} intensity={1} />
 							<pointLight position={[-3, -3, 2]} />
-							<Appring />
-							<Planet />
-							<Ring />
+							<Gravity />
 							<OrbitControls />
 						</Canvas>
 					</div>
@@ -98,6 +98,76 @@ function Body() {
 							</div>
 						</div>
 					</div>
+					<div class="flip-card" tabIndex="0">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img
+									src={Brand}
+									alt="Gravity Films Brand"
+									className="brand-logo"
+								/>
+							</div>
+							<div class="flip-card-back">
+								<Background />
+							</div>
+						</div>
+					</div>
+					<div class="flip-card" tabIndex="0">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img
+									src={Brand}
+									alt="Gravity Films Brand"
+									className="brand-logo"
+								/>
+							</div>
+							<div class="flip-card-back">
+								<Background />
+							</div>
+						</div>
+					</div>
+					<div class="flip-card" tabIndex="0">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img
+									src={Brand}
+									alt="Gravity Films Brand"
+									className="brand-logo"
+								/>
+							</div>
+							<div class="flip-card-back">
+								<Background />
+							</div>
+						</div>
+					</div>
+					<div class="flip-card" tabIndex="0">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img
+									src={Brand}
+									alt="Gravity Films Brand"
+									className="brand-logo"
+								/>
+							</div>
+							<div class="flip-card-back">
+								<Background />
+							</div>
+						</div>
+					</div>
+					<div class="flip-card" tabIndex="0">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img
+									src={Brand}
+									alt="Gravity Films Brand"
+									className="brand-logo"
+								/>
+							</div>
+							<div class="flip-card-back">
+								<Background />
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div className="container">
@@ -106,11 +176,13 @@ function Body() {
 						WORK SAMPLES
 					</Box>
 				</Typography>
+				<WorkSampleCarousel />
 			</div>
 			<div className="container">
 				<Typography gutterBottom>
 					<Box sx={{ fontWeight: 270, fontSize: "h4.fontSize" }}>OUR TEAM</Box>
 				</Typography>
+				<AboutCarousel />
 			</div>
 		</div>
 	);

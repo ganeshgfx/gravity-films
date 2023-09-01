@@ -16,7 +16,9 @@ import {
 	AutoFixHighTwoTone,
 	Diversity1TwoTone,
 	SellTwoTone,
+	Height,
 } from "@mui/icons-material";
+import AboutCarousel from "../about/AboutCarousel";
 
 export default function Services() {
 	return (
@@ -26,20 +28,29 @@ export default function Services() {
 					OUR SERVICES
 				</Box>
 			</Typography>
-			<div className="d-flex">
+			<div className="d-flex  align-items-center">
 				<div
 					className="flex-fill card"
 					style={{
 						backgroundColor: "transparent",
 					}}
-				></div>
-				<div>
+				>
+					<AboutCarousel />
+				</div>
+				<div style={{ textWrap: "nowrap" }}>
 					<List>
 						<ListItem>
 							<ListItemIcon>
 								<NewspaperTwoTone style={{ color: "white" }} />
 							</ListItemIcon>
 							<ListItemText primary="Press Release & Magazines" />
+						</ListItem>
+						<Divider />
+						<ListItem>
+							<ListItemIcon>
+								<SellTwoTone style={{ color: "white" }} />
+							</ListItemIcon>
+							<ListItemText primary="E-commerce" />
 						</ListItem>
 						<Divider />
 						<ListItem>
