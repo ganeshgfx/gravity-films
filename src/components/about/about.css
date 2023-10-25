@@ -1,0 +1,44 @@
+
+.scroll-parent {
+    position: relative;
+    width: 100vw;
+    height: 20rem;
+    overflow-x: hidden;
+  }
+  
+  .scroll-element {
+    display: flex;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    animation: primary 20s linear infinite;
+    align-items: center;
+    justify-content: space-around;
+  }
+.primary {
+    animation: primary 20s linear infinite;
+  }
+  
+  .secondary {
+    animation: secondary 20s linear infinite;
+  }
+  
+  @keyframes primary {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -100%;
+    }
+  }
+  
+  @keyframes secondary {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0%;
+    }
+  }
