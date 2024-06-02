@@ -1,0 +1,1 @@
+function r(n){const{context:e,particle:o,radius:a}=n,t=o.shapeData,i=0;e.moveTo(-a,i),e.lineTo(a,i),e.lineCap=(t==null?void 0:t.cap)??"butt"}const c=1;class s{constructor(){this.validTypes=["line"]}draw(e){r(e)}getSidesCount(){return c}}async function d(n,e=!0){await n.addShape(new s,e)}export{d as loadLineShape};
