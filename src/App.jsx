@@ -5,6 +5,9 @@ import Home from './pages/Home'
 import theme from './theme'
 import Nav from './nav/Nav'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import About from './pages/About'
+import Services from './pages/Services'
+import Portfolio from './pages/Portfolio'
 function App() {
 
      return (
@@ -20,10 +23,13 @@ function App() {
                     <Nav />
                     <Routes>
                          <Route path="/" element={<Home />} />
-                         {/* <Route path="/about" element={<About />} />
-                              <Route path="/services" element={<Services />} />
+                         <Route path="/about" element={<About />} />
+                         <Route path="/services" element={<Services />} />
+                         <Route path="/portfolio" element={<Portfolio />} />
+                         {/* 
+                              
                               <Route path="/work" element={<Work />} />
-                              <Route path="/portfolio" element={<Portfolio />} />
+                              
                               <Route path="/details" element={<Details />} /> */}
                          {/* <Route path="*" element={<NotFound />} /> */}
                     </Routes>

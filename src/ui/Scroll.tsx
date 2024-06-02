@@ -4,6 +4,7 @@ import { useRef } from "react";
 import HoverCard from "./HoverCard";
 import { LearnMore } from "./LearnMore";
 import { Container } from "@mui/joy";
+import Title from "./Title";
 export default function Scroll() {
      const targetRef = useRef(null);
      const { scrollYProgress } = useScroll({
@@ -14,47 +15,61 @@ export default function Scroll() {
      const x2 = useTransform(scrollYProgress, [0, 1], ["1%", "100%"]);
      const o = useTransform(scrollYProgress, [0, 1], ["1%", "100%"]);
      return (
-          <section
-               ref={targetRef}
-               className="relative h-[300vh] md:h-[300vh] mask"
-          >
-               <div className="sticky top-0 flex h-screen items-center overflow-hidden justify-center">
-                    <motion.div
+          <>
+               {/* <div className="mask-top" /> */}
+               <section
+                    ref={targetRef}
+                    className="relative h-[300vh] md:h-[300vh] mask"
+               >
+                    <div
                          style={{
-                              height: "100%",
-                              width: "100%",
-                              position: "absolute",
                               display: "flex",
                               justifyContent: "center",
                               alignItems: "center",
-                              flexDirection: "column",
-                              opacity: o,
                          }}
                     >
-                         <LearnMore />
-                         <div>
-                              <span className="text-4xl font-bold text-center block mb-10">
-                                   Our Clients
-                              </span>
-                         </div>
-                    </motion.div>
-                    <div>
-                         <motion.div style={{ x }} className="flex gap-4">
-                              {cards1.map((card) => {
-                                   return <Card card={card} key={card.id} />;
-                              })}
-                         </motion.div>
-                         <motion.div
-                              style={{ x: x2 }}
-                              className="flex mt-4 gap-4"
-                         >
-                              {cards2.map((card) => {
-                                   return <Card card={card} key={card.id} />;
-                              })}
-                         </motion.div>
+                         <Title title="Our Work" />
                     </div>
-               </div>
-          </section>
+                    <div className="sticky top-0 flex h-screen items-center overflow-hidden justify-center">
+                         <motion.div
+                              style={{
+                                   height: "100%",
+                                   width: "100%",
+                                   position: "absolute",
+                                   display: "flex",
+                                   justifyContent: "center",
+                                   alignItems: "center",
+                                   flexDirection: "column",
+                                   opacity: o,
+                              }}
+                         >
+                              <LearnMore />
+                              <div>
+                                   <Title title="Our Clients" />
+                              </div>
+                         </motion.div>
+                         <div>
+                              <motion.div style={{ x }} className="flex gap-4">
+                                   {cards1.map((card) => {
+                                        return (
+                                             <Card card={card} key={card.id} />
+                                        );
+                                   })}
+                              </motion.div>
+                              <motion.div
+                                   style={{ x: x2 }}
+                                   className="flex mt-4 gap-4"
+                              >
+                                   {cards2.map((card) => {
+                                        return (
+                                             <Card card={card} key={card.id} />
+                                        );
+                                   })}
+                              </motion.div>
+                         </div>
+                    </div>
+               </section>
+          </>
      );
 }
 const Card = ({ card }) => {
