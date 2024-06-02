@@ -3,6 +3,7 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import HoverCard from "./HoverCard";
 import { LearnMore } from "./LearnMore";
+import { Container } from "@mui/joy";
 export default function Scroll() {
      const targetRef = useRef(null);
      const { scrollYProgress } = useScroll({
@@ -13,20 +14,30 @@ export default function Scroll() {
      const x2 = useTransform(scrollYProgress, [0, 1], ["1%", "100%"]);
      const o = useTransform(scrollYProgress, [0, 1], ["1%", "100%"]);
      return (
-          <section ref={targetRef} className="relative h-[300vh] ">
+          <section
+               ref={targetRef}
+               className="relative h-[300vh] md:h-[300vh] mask"
+          >
                <div className="sticky top-0 flex h-screen items-center overflow-hidden justify-center">
-                    <div
+                    <motion.div
                          style={{
                               height: "100%",
-                              width: "100vw",
+                              width: "100%",
                               position: "absolute",
                               display: "flex",
                               justifyContent: "center",
                               alignItems: "center",
+                              flexDirection: "column",
+                              opacity: o,
                          }}
                     >
                          <LearnMore />
-                    </div>
+                         <div>
+                              <span className="text-4xl font-bold text-center block mb-10">
+                                   Our Clients
+                              </span>
+                         </div>
+                    </motion.div>
                     <div>
                          <motion.div style={{ x }} className="flex gap-4">
                               {cards1.map((card) => {
@@ -37,7 +48,7 @@ export default function Scroll() {
                               style={{ x: x2 }}
                               className="flex mt-4 gap-4"
                          >
-                              {cards1.map((card) => {
+                              {cards2.map((card) => {
                                    return <Card card={card} key={card.id} />;
                               })}
                          </motion.div>
@@ -71,28 +82,89 @@ const Card = ({ card }) => {
 };
 const cards1 = [
      {
-          url: "/brands/cci.jpg",
-          title: "Title",
+          url: "/brands/hzc.png",
+          title: "Hazelcop",
           id: 1,
      },
      {
-          url: "/brands/fr.png",
-          title: "Title",
+          url: "/brands/ig.png",
+          title: "Indiegrow Fusion",
           id: 2,
      },
+     //
      {
-          url: "/brands/hermod.jpg",
-          title: "Title",
+          url: "/brands/cci.png",
+          title: "Coffee Cup India ",
           id: 3,
      },
      {
-          url: "/brands/hul.jpg",
-          title: "Title",
+          url: "/brands/fr.png",
+          title: "Foreignroutes Immigration",
           id: 4,
      },
      {
+          url: "/brands/hermod.jpg",
+          title: "HERMOD",
+          id: 4,
+     },
+     {
+          url: "/brands/hul.jpg",
+          title: "HINDUSTAN UNILEVER",
+          id: 6,
+     },
+     {
           url: "/brands/hzc.png",
-          title: "Title",
-          id: 5,
+          title: "Hazelcop",
+          id: 7,
+     },
+     {
+          url: "/brands/ig.png",
+          title: "Indiegrow Fusion",
+          id: 8,
+     },
+     //
+];
+const cards2 = [
+     //
+     {
+          url: "/brands/nift.jpg",
+          title: "NIFT National Institute of Fashion Technology",
+          id: 9,
+     },
+     {
+          url: "/brands/nutsnjar.jpg",
+          title: "Nuts N Jars",
+          id: 10,
+     },
+     {
+          url: "/brands/sf.png",
+          title: "SCreation films",
+          id: 11,
+     },
+     {
+          url: "/brands/trid.png",
+          title: "Tri Drashya",
+          id: 12,
+     },
+     {
+          url: "/brands/mf.png",
+          title: "My Fitness Peanut Butter.",
+          id: 13,
+     },
+     //
+     {
+          url: "/brands/ig.png",
+          title: "Indiegrow Fusion",
+          id: 14,
+     },
+     {
+          url: "/brands/hzc.png",
+          title: "Hazelcop",
+          id: 15,
+     },
+     {
+          url: "/brands/ig.png",
+          title: "Indiegrow Fusion",
+          id: 16,
      },
 ];

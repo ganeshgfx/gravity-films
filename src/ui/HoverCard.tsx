@@ -43,7 +43,7 @@ const HoverCard = (props) => {
           x.set(0);
           y.set(0);
      };
-     console.log(props.data);
+
      return (
           <motion.div
                ref={ref}
@@ -53,24 +53,29 @@ const HoverCard = (props) => {
                     transformStyle: "preserve-3d",
                     transform,
                     zIndex: 3000,
+                    backgroundColor: "#292929",
                }}
-               className="relative h-96 w-72 rounded-xl bg-gradient-to-br from-indigo-300 to-violet-300"
+               className="relative h-48 w-48 lg:h-96 lg:w-96 rounded-xl"
           >
                <div
                     style={{
                          transform: "translateZ(75px)",
                          transformStyle: "preserve-3d",
+                         backgroundColor: "#1d1d1d",
+                         backgroundImage: `url(${props.data.url})`,
+                         backgroundSize: "cover",
+                         backgroundPosition: "center",
                     }}
-                    className="absolute inset-4 grid place-content-center rounded-xl bg-white shadow-lg"
+                    className="absolute inset-4 grid rounded-xl shadow-lg"
                >
-                    <p
+                    <h1
                          style={{
-                              transform: "translateZ(150px)",
+                              transform: "translateZ(10px)",
                          }}
-                         className="text-center text-2xl font-bold text-gray-800"
+                         className="text-2xl font-bold ms-5 mt-5 shadow-md"
                     >
-                         {props.data.title}
-                    </p>
+                         {/* {props.data.title} */}
+                    </h1>
                </div>
           </motion.div>
      );

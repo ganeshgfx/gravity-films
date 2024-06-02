@@ -1,28 +1,14 @@
 import { useAnimate } from "framer-motion";
 import React, { useRef } from "react";
+import LMButton from "./LMButton";
 
 export const LearnMore = () => {
+     const words = "Gravity Films ".split("");
      return (
           <MouseImageTrail
                renderImageBuffer={50}
                rotationRange={25}
-               images={[
-                    "G",
-                    "r",
-                    "a",
-                    "v",
-                    "t",
-                    "y",
-                    " ",
-                    " ",
-                    "F",
-                    "i",
-                    "l",
-                    "m",
-                    "s",
-                    " ",
-                    " ",
-               ]}
+               images={words}
           >
                <section
                     style={{
@@ -30,9 +16,10 @@ export const LearnMore = () => {
                     }}
                     className="grid h-screen w-full place-content-center "
                >
-                    <p className="flex items-center gap-2 text-3xl font-bold uppercase ">
+                    {/* <p className="flex items-center gap-2 text-3xl font-bold uppercase ">
                          <span>Click Me</span>
-                    </p>
+                    </p> */}
+                    <LMButton />
                </section>
           </MouseImageTrail>
      );
@@ -137,7 +124,7 @@ const MouseImageTrail = ({
                          className="pointer-events-none absolute left-0 top-0 w-auto opacity-0"
                          key={index}
                          style={{
-                              fontSize: "3rem",
+                              fontSize: "2rem",
                          }}
                          data-mouse-move-index={index}
                     >

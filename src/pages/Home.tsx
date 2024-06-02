@@ -7,13 +7,22 @@ import { OrbitControls } from "@react-three/drei";
 import Gravity from "../3d/Gravity";
 import Scroll from "../ui/Scroll";
 import LogoSlider from "../ui/LogoSlider";
+import Logos from "../ui/Logos";
+import {
+     TypewriterEffect,
+     TypewriterEffectSmooth,
+} from "../ui/typewriter-effect";
+import { Container } from "@mui/joy";
+import { TextGenerateEffect } from "../ui/text-generate-effect";
+import HeadText from "../ui/HeadText";
 
-export default function Parallax() {
+export default function Home() {
      const ref = useRef(null);
      const { scrollYProgress } = useScroll({
           target: ref,
           offset: ["start start", "end start"],
      });
+     //get true if  width is geater than height
      const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
      const textY = useTransform(scrollYProgress, [0, 1], ["0%", "250%"]);
      return (
@@ -89,16 +98,17 @@ export default function Parallax() {
                                    </div>
                               </div>
                          </div>
+                         <Container maxWidth="xl">
+                              <HeadText />
+                         </Container>
                     </motion.div>
                     <motion.div
                          className="absolute inset-0 z-0"
                          style={{
-                              // backgroundImage: `url(/a.jpg)`,
-                              backgroundPosition: "bottom",
-                              backgroundSize: "cover",
+                              marginTop: "50vh",
                               y: backgroundY,
                          }}
-                    />
+                    ></motion.div>
                     <div
                          className="absolute inset-0 z-20"
                          style={{
@@ -109,7 +119,8 @@ export default function Parallax() {
                     />
                </div>
                <Scroll />
-               <LogoSlider />
+               <Logos />
+               {/* <LogoSlider /> */}
                <div className="w-full bg-[#06141D]">
                     <div className="max-w-lg space-y-4 mx-auto py-24 text-neutral-300">
                          <p>

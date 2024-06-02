@@ -1,7 +1,7 @@
 
-import { Box, CssVarsProvider } from '@mui/joy'
+import { CssVarsProvider } from '@mui/joy'
 import './App.css'
-import Parallax from './pages/Home'
+import Home from './pages/Home'
 import theme from './theme'
 import Nav from './nav/Nav'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
@@ -19,7 +19,7 @@ function App() {
                <BrowserRouter>
                     <Nav />
                     <Routes>
-                         <Route path="/" element={<Parallax />} />
+                         <Route path="/" element={<Home />} />
                          {/* <Route path="/about" element={<About />} />
                               <Route path="/services" element={<Services />} />
                               <Route path="/work" element={<Work />} />

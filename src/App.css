@@ -58,7 +58,15 @@
           height: 130vh !important;
      }
 }
-
+.mask {
+     mask-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 1) 25%,
+          rgba(0, 0, 0, 1) 75%,
+          rgba(0, 0, 0, 0)
+     );
+}
 .wrapper {
      margin-top: 2rem;
      max-width: 1536px;

@@ -1,29 +1,30 @@
+import { Divider } from "@mui/joy";
 import React from "react";
 
 function LogoSlider() {
      const logos_1 = [
-          "HRMD.svg",
-          "Nuts-n-Jars.png.webp",
-          "hul.svg",
+          "HRMD.png",
+          "nnj.png",
+          "hul.png",
           "nift.png",
           "scf.png",
           "ig.png",
           "cci.png",
           "3d.png",
-          "hzc.png",
      ];
      const logos_2 = [
-          "mf.svg",
+          "mf.png",
           "fr.png",
-          "HRMD.svg",
+          "HRMD.png",
           "Nuts-n-Jars.png.webp",
-          "hul.svg",
+          "hul.png",
           "nift.png",
           "scf.png",
-          "ig.png",
+          "hzc.png",
      ];
      return (
           <>
+               <div style={{ margin: 75 }} />
                <div className="wrapper">
                     {logos_1.map((logo, index) => (
                          <div
@@ -31,8 +32,18 @@ function LogoSlider() {
                               className={`item itemLeft ${
                                    "item" + (index + 1)
                               }`}
+                              style={{
+                                   display: "flex",
+                                   justifyContent: "center",
+                              }}
                          >
-                              <img src={`/logos/${logo}`} alt={logo} />
+                              <img
+                                   style={{
+                                        position: "relative",
+                                   }}
+                                   src={`/logos/${logo}`}
+                                   alt={logo}
+                              />
                          </div>
                     ))}
                </div>
@@ -48,6 +59,8 @@ function LogoSlider() {
                          </div>
                     ))}
                </div>
+               <div style={{ margin: 75 }} />
+               <Divider />
           </>
      );
 }
