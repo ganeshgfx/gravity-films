@@ -1,1 +1,0 @@
-import{M as s,E as e}from"./index-BxzMU4UR.js";async function i(){s(e.easeInQuad,a=>a**2),s(e.easeOutQuad,a=>1-(1-a)**2),s(e.easeInOutQuad,a=>a<.5?2*a**2:1-(-2*a+2)**2/2),await Promise.resolve()}export{i as loadEasingQuadPlugin};
