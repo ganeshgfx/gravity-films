@@ -28,7 +28,7 @@ function LogoSlider() {
                <div className="wrapper">
                     {logos_1.map((logo, index) => (
                          <div
-                              key={index}
+                              key={`logo_1_${index}`}
                               className={`item itemLeft ${
                                    "item" + (index + 1)
                               }`}
@@ -50,7 +50,7 @@ function LogoSlider() {
                <div className="wrapper">
                     {logos_2.map((logo, index) => (
                          <div
-                              key={index}
+                              key={`logo_2_${index}`}
                               className={`item itemRight ${
                                    "item" + (index + 1)
                               }`}

@@ -301,3 +301,7 @@
 .bg2 {
      background-color: var(--foreground);
 }
+.shuffle > svg {
+     width: 100%;
+     height: 100%;
+}

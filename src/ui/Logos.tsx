@@ -32,6 +32,7 @@ export default function Logos() {
           >
                {logos.map((logo, index) => (
                     <motion.div
+                         key={`logo_slide_${index}`}
                          initial={{
                               opacity: 0,
                               // if odd index card,slide from right instead of left

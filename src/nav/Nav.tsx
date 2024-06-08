@@ -19,7 +19,6 @@ import { useMediaQuery } from "@mui/material";
 import React from "react";
 function Nav() {
      const isSmallScreen = useMediaQuery("(max-width:768px)");
-     console.log(isSmallScreen);
      return (
           <Container
                sx={{

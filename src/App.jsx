@@ -9,37 +9,38 @@ import About from './pages/About'
 import Services from './pages/Services'
 import Portfolio from './pages/Portfolio'
 import Footer from './ui/Footer'
-import SmoothScroll from './ui/SmoothScroll'
+import React from 'react'
 function App() {
 
      return (
-          <SmoothScroll>
-               <main>
-                    <CssVarsProvider
-                         theme={theme}
-                         defaultMode="dark"
-                         colorSchemeSelector="#demo_dark-mode-by-default"
-                         modeStorageKey="demo_dark-mode-by-default"
-                         disableNestedContext
-                    />
-                    <BrowserRouter>
-                         <Nav />
-                         <Routes>
-                              <Route path="/" element={<Home />} />
-                              <Route path="/about" element={<About />} />
-                              <Route path="/services" element={<Services />} />
-                              <Route path="/portfolio" element={<Portfolio />} />
-                              {/* 
+          <React.Fragment>
+               <CssVarsProvider
+                    theme={theme}
+                    defaultMode="dark"
+                    colorSchemeSelector="#demo_dark-mode-by-default"
+                    modeStorageKey="demo_dark-mode-by-default"
+                    disableNestedContext
+               />
+               <BrowserRouter>
+                    <Nav />
+                    <Routes>
+
+                         <Route path="/" element={<Home />} />
+                         <Route path="/about" element={<About />} />
+                         <Route path="/services" element={<Services />} />
+                         <Route path="/portfolio" element={<Portfolio />} />
+                         {/* 
                               
                               <Route path="/work" element={<Work />} />
                               
                               <Route path="/details" element={<Details />} /> */}
-                              {/* <Route path="*" element={<NotFound />} /> */}
-                         </Routes>
-                         <Footer />
-                    </BrowserRouter>
-               </main>
-          </SmoothScroll>
+                         {/* <Route path="*" element={<NotFound />} /> */}
+
+
+                    </Routes>
+                    <Footer />
+               </BrowserRouter>
+          </React.Fragment>
      )
 }
 

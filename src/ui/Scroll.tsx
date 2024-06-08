@@ -128,7 +128,7 @@ const cards1 = [
      {
           url: "/brands/hermod.jpg",
           title: "HERMOD",
-          id: 4,
+          id: 5,
      },
      {
           url: "/brands/hul.jpg",

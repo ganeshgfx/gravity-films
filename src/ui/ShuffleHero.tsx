@@ -1,27 +1,198 @@
-import { Container } from "@mui/joy";
+import {
+     Box,
+     Container,
+     Divider,
+     Grid,
+     List,
+     ListItem,
+     ListItemButton,
+     ListItemContent,
+     ListItemDecorator,
+     Stack,
+     Typography,
+} from "@mui/joy";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import React from "react";
 import TrailsText from "./TrailsText";
+import {
+     AnimationTwoTone,
+     AutoFixHighTwoTone,
+     CampaignTwoTone,
+     Circle,
+     ContentCutTwoTone,
+     DrawTwoTone,
+     KeyboardArrowLeft,
+     KeyboardArrowRight,
+     LanguageTwoTone,
+     LocalSeeTwoTone,
+     MovieFilterTwoTone,
+     MusicNoteTwoTone,
+     StayCurrentPortraitTwoTone,
+     StickyNote2TwoTone,
+     SupportAgentTwoTone,
+     TheaterComedyTwoTone,
+     TipsAndUpdatesTwoTone,
+     VideocamTwoTone,
+     ViewInArTwoTone,
+} from "@mui/icons-material";
+import Title from "./Title";
+const services = [
+     {
+          id: 0,
+          title: "Film Making",
+          icon: <MovieFilterTwoTone />,
+          color: "#f44336",
+     },
+     {
+          id: 1,
+          title: "Cinematography",
+          icon: <VideocamTwoTone />,
+          color: "#ff9800",
+     },
+     {
+          id: 2,
+          title: "Directing",
+          icon: <TheaterComedyTwoTone />,
+          color: "#4caf50",
+     },
+     {
+          id: 3,
+          title: "Editing",
+          icon: <ContentCutTwoTone />,
+          color: "#2196f3",
+     },
+     {
+          id: 4,
+          title: "VFX / CGI",
+          icon: <ViewInArTwoTone />,
+          color: "#9c27b0",
+     },
+     {
+          id: 5,
+          title: "Animations",
+          icon: <AnimationTwoTone />,
+          color: "#e91e63",
+     },
+     {
+          id: 6,
+          title: "Photography",
+          icon: <LocalSeeTwoTone />,
+          color: "#ff5722",
+     },
+     {
+          id: 7,
+          title: "Graphics Design",
+          icon: <DrawTwoTone />,
+          color: "#607d8b",
+     },
+     {
+          id: 8,
+          title: "Music / Sounds",
+          icon: <MusicNoteTwoTone />,
+          color: "#795548",
+     },
+     {
+          id: 9,
+          title: "Digital Marketing",
+          icon: <CampaignTwoTone />,
+          color: "#3f51b5",
+     },
+     {
+          id: 10,
+          title: "Website Development",
+          icon: <LanguageTwoTone />,
+          color: "#009688",
+     },
+     {
+          id: 11,
+          title: "App Development",
+          icon: <StayCurrentPortraitTwoTone />,
+          color: "#8bc34a",
+     },
+     {
+          id: 12,
+          title: "Content Writing",
+          icon: <StickyNote2TwoTone />,
+          color: "#ffeb3b",
+     },
+     {
+          id: 13,
+          title: "Tech Support",
+          icon: <SupportAgentTwoTone />,
+          color: "#ff9800",
+     },
+     {
+          id: 14,
+          title: "Brand Building",
+          icon: <TipsAndUpdatesTwoTone />,
+          color: "#ff5722",
+     },
+     {
+          id: 15,
+          title: "Visual Art",
+          icon: <AutoFixHighTwoTone />,
+          color: "#607d8b",
+     },
+];
 const ShuffleHero = () => {
      return (
           <Container maxWidth="xl">
                <section className="w-full py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8  mx-auto">
                     <div>
-                         <span className="block mb-4 text-xs md:text-sm text-indigo-500 font-medium">
-                              Better every day
-                         </span>
-                         <h3 className="text-4xl md:text-6xl font-semibold">
-                              Let's change it up a bit
-                         </h3>
-                         <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
-                              Lorem ipsum dolor sit amet consectetur,
-                              adipisicing elit. Nam nobis in error repellat
-                              voluptatibus ad.
-                         </p>
-                         <button className="bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
-                              Find a class
-                         </button>
+                         <Title title="Our Services" />
+                         <Grid
+                              my={1}
+                              container
+                              columns={{ xs: 8, sm: 8, md: 16 }}
+                              sx={{ flexGrow: 1 }}
+                         >
+                              {services.map((service, index) => (
+                                   <Grid xs={8} key={index}>
+                                        <Stack
+                                             direction="row"
+                                             alignItems="center"
+                                             spacing={1}
+                                             px={2}
+                                             py={1}
+                                             sx={{
+                                                  transformOrigin: "0% 0%",
+                                                  border: "1px solid transparent",
+                                                  borderRadius: "10px",
+                                                  cursor: "pointer",
+                                                  transition: "all 0.3s",
+                                                  backgroundColor: "#1a1a1a",
+                                                  "&:hover": {
+                                                       transform:
+                                                            "translateX(15px)rotate(-5deg)",
+                                                       color: "#e6e6e6",
+                                                       border: "1px solid #2d2d2d",
+                                                  },
+                                             }}
+                                        >
+                                             {service.icon}
+                                             <Typography
+                                                  noWrap
+                                                  variant="plain"
+                                                  sx={{
+                                                       flexGrow: 1,
+                                                       color: "inherit",
+                                                  }}
+                                             >
+                                                  {service.title}
+                                             </Typography>
+                                             <KeyboardArrowRight />
+                                        </Stack>
+                                   </Grid>
+                              ))}
+                         </Grid>
+                         <div
+                              style={{
+                                   visibility: "hidden",
+                              }}
+                         >
+                              <Title title="." />
+                         </div>
                     </div>
                     <ShuffleGrid />
                </section>
@@ -45,86 +216,21 @@ const shuffle = (array) => {
 
      return array;
 };
-
-const squareData = [
-     {
-          id: 1,
-          src: "https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-     },
-     {
-          id: 2,
-          src: "https://images.unsplash.com/photo-1510925758641-869d353cecc7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-     },
-     {
-          id: 3,
-          src: "https://images.unsplash.com/photo-1629901925121-8a141c2a42f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-     },
-     {
-          id: 4,
-          src: "https://images.unsplash.com/photo-1580238053495-b9720401fd45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-     },
-     {
-          id: 5,
-          src: "https://images.unsplash.com/photo-1569074187119-c87815b476da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80",
-     },
-     {
-          id: 6,
-          src: "https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-     },
-     {
-          id: 7,
-          src: "https://images.unsplash.com/photo-1599586120429-48281b6f0ece?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-     },
-     {
-          id: 8,
-          src: "https://plus.unsplash.com/premium_photo-1671436824833-91c0741e89c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-     },
-     {
-          id: 9,
-          src: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-     },
-     {
-          id: 10,
-          src: "https://images.unsplash.com/photo-1610768764270-790fbec18178?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-     },
-     {
-          id: 11,
-          src: "https://images.unsplash.com/photo-1507034589631-9433cc6bc453?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=684&q=80",
-     },
-     {
-          id: 12,
-          src: "https://images.unsplash.com/photo-1533107862482-0e6974b06ec4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=882&q=80",
-     },
-     {
-          id: 13,
-          src: "https://images.unsplash.com/photo-1560089000-7433a4ebbd64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-     },
-     {
-          id: 14,
-          src: "https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",
-     },
-     {
-          id: 15,
-          src: "https://images.unsplash.com/photo-1606244864456-8bee63fce472?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=681&q=80",
-     },
-     {
-          id: 16,
-          src: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1820&q=80",
-     },
-];
-
 const generateSquares = () => {
-     return shuffle(squareData).map((sq) => (
+     return shuffle(services).map((sq) => (
           <motion.div
                key={sq.id}
                layout
                transition={{ duration: 1.5, type: "spring" }}
-               className="w-full h-full"
+               className="w-full h-full flex items-center justify-center text-4xl text-white p-7 rounded-md shuffle"
                style={{
-                    backgroundImage: `url(${sq.src})`,
-                    backgroundSize: "cover",
+                    // backgroundImage: `url(${sq.src})`,
+                    backgroundSize: "fit",
+                    backgroundColor: "#262626",
                }}
-          ></motion.div>
+          >
+               {sq.icon}
+          </motion.div>
      ));
 };
 
@@ -134,18 +240,16 @@ const ShuffleGrid = () => {
 
      useEffect(() => {
           shuffleSquares();
-
           return () => clearTimeout(timeoutRef.current);
      }, []);
 
      const shuffleSquares = () => {
           setSquares(generateSquares());
-
           timeoutRef.current = setTimeout(shuffleSquares, 3000);
      };
 
      return (
-          <div className="grid grid-cols-4 grid-rows-4 h-[450px]  gap-1">
+          <div className="grid grid-cols-4 grid-rows-4 h-[450px] gap-1">
                {squares.map((sq) => sq)}
           </div>
      );
