@@ -1,3 +1,29 @@
+:root {
+     --primary: #ffffff;
+     --primary-content: #808080;
+     --primary-dark: #e6e6e6;
+     --primary-light: #ffffff;
+
+     --secondary: #ffffff;
+     --secondary-content: #808080;
+     --secondary-dark: #e6e6e6;
+     --secondary-light: #ffffff;
+
+     --background: #1a1a1a;
+     --foreground: #262626;
+     --border: #404040;
+
+     --copy: #fbfbfb;
+     --copy-light: #d9d9d9;
+     --copy-lighter: #a6a6a6;
+
+     --success: #ffffff;
+     --warning: #ffffff;
+     --error: #ffffff;
+     --success-content: #808080;
+     --warning-content: #808080;
+     --error-content: #808080;
+}
 .main-logo {
      height: 250pt;
 }
@@ -10,25 +36,7 @@
      letter-spacing: 0.55em;
      transform: translateY(-10px);
 }
-@media only screen and (max-width: 526px) {
-     .main-logo {
-          height: 150pt;
-     }
-     .main-text-1 {
-          font-size: 3em;
-          letter-spacing: 0.3em;
-     }
-     .main-text-2 {
-          font-size: 1em;
-          letter-spacing: 0.55em;
-          transform: translateY(-10px);
-     }
-}
-@media only screen and (max-width: 526px) {
-     .main-logo {
-          height: 130pt;
-     }
-}
+
 .gradient {
      background: linear-gradient(-45deg, #7e1717, #8b1874, #071952, #17594a);
      /* background: linear-gradient(-45deg, #000000, #ffffff, #000000, #ffffff); */
@@ -47,17 +55,7 @@
           background-position: 0% 50%;
      }
 }
-@media only screen and (max-width: 768px) {
-     .mobile-width {
-          width: 100vw !important;
-          padding: 0px !important;
-     }
-}
-@media only screen and (max-width: 1024px) {
-     .layer {
-          height: 130vh !important;
-     }
-}
+
 .mask-top {
      --mask: radial-gradient(31.32px at 50% 39px, #000 99%, #0000 101%)
                calc(50% - 60px) 0/120px 100%,
@@ -186,4 +184,120 @@
 
 .item8 {
      animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+.brand-logo {
+     height: 64px;
+     margin: 1rem;
+}
+.hoverText {
+     transition: 0.35s font-weight, 0.35s color;
+}
+
+.hoverText:hover {
+     font-weight: 900;
+     color: rgb(238, 242, 255);
+}
+
+/* To the right */
+.hoverText:hover + .hoverText {
+     font-weight: 500;
+     color: rgb(199, 210, 254);
+}
+
+.hoverText:hover + .hoverText + .hoverText {
+     font-weight: 300;
+}
+
+/* To the left */
+.hoverText:has(+ .hoverText:hover) {
+     font-weight: 500;
+     color: rgb(199, 210, 254);
+}
+
+.hoverText:has(+ .hoverText + .hoverText:hover) {
+     font-weight: 300;
+}
+
+@media only screen and (max-width: 526px) {
+     .main-logo {
+          height: 150pt;
+     }
+     .main-text-1 {
+          font-size: 3em;
+          letter-spacing: 0.3em;
+     }
+     .main-text-2 {
+          font-size: 1em;
+          letter-spacing: 0.55em;
+          transform: translateY(-10px);
+     }
+}
+@media only screen and (max-width: 526px) {
+     .main-logo {
+          height: 130pt;
+     }
+}
+@media only screen and (max-width: 768px) {
+     .mobile-width {
+          width: 100vw !important;
+          padding: 0px !important;
+     }
+}
+@media only screen and (max-width: 1024px) {
+     .layer {
+          height: 130vh !important;
+     }
+     .brand-logo {
+          height: 48px;
+          margin: 5px;
+     }
+}
+/* waves */
+.wave {
+     --mask: radial-gradient(39.37px at 50% 55.5px, #000 99%, #0000 101%)
+               calc(50% - 60px) 0/120px 100%,
+          radial-gradient(39.37px at 50% -25.5px, #0000 99%, #000 101%) 50% 30px/120px
+               100% repeat-x;
+     -webkit-mask: var(--mask);
+     mask: var(--mask);
+}
+.wave-botom {
+     --mask: radial-gradient(
+                    39.37px at 50% calc(100% - 55.5px),
+                    #000 99%,
+                    #0000 101%
+               )
+               calc(50% - 60px) 0/120px 100%,
+          radial-gradient(
+                    39.37px at 50% calc(100% + 25.5px),
+                    #0000 99%,
+                    #000 101%
+               )
+               50% calc(100% - 30px) / 120px 100% repeat-x;
+     -webkit-mask: var(--mask);
+     mask: var(--mask);
+}
+/* trail */
+.trailsText {
+     position: relative;
+     width: 100%;
+
+     will-change: transform, opacity;
+     overflow: hidden;
+}
+
+.trailsText > div {
+     overflow: hidden;
+}
+.trailsContainer {
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+}
+/* wave bg */
+.bg1 {
+     background-color: var(--background);
+}
+.bg2 {
+     background-color: var(--foreground);
 }

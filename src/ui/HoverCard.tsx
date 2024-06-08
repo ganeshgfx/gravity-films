@@ -55,7 +55,7 @@ const HoverCard = (props) => {
                     zIndex: 3000,
                     backgroundColor: "#292929",
                }}
-               className="relative h-48 w-48 lg:h-96 lg:w-96 rounded-xl"
+               className="relative h-56 w-56 lg:h-96 lg:w-96 rounded-xl"
           >
                <div
                     style={{

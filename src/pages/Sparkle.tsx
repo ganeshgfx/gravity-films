@@ -1,5 +1,5 @@
 "use client";
-
+import React from "react";
 import { SparklesCore } from "./SparklesCore";
 
 export function Sparkles() {
@@ -29,7 +29,7 @@ export function Sparkles() {
                     {/* Radial Gradient to prevent sharp edges */}
                     <div
                          style={{
-                              backgroundColor: "#121212",
+                              backgroundColor: "rgb(26 26 26)",
                          }}
                          className="absolute inset-0 w-full h-full [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"
                     ></div>

@@ -15,6 +15,8 @@ export default function Logos() {
           "nnj.png",
           "hzc.png",
           "nift.png",
+          "arv.png",
+          "dri.png",
      ];
      return (
           <Container
@@ -23,19 +25,33 @@ export default function Logos() {
                     display: "flex",
                     flexWrap: "wrap",
                     alignItems: "center",
-                    justifyContent: "center",
+                    justifyContent: "space-between",
                     gap: "1rem",
                }}
+               className="px-1 mb-1"
           >
                {logos.map((logo, index) => (
-                    <img
-                         style={{
-                              height: "64px",
-                              margin: "1rem",
+                    <motion.div
+                         initial={{
+                              opacity: 0,
+                              // if odd index card,slide from right instead of left
+                              y: index % 2 === 0 ? 50 : -50,
                          }}
-                         src={`/logos/${logo}`}
-                         alt={logo}
-                    />
+                         whileInView={{
+                              opacity: 1,
+                              y: 0, // Slide in to its original position
+                              transition: {
+                                   duration: 2, // Animation duration
+                              },
+                         }}
+                         viewport={{ once: true }}
+                    >
+                         <img
+                              className="brand-logo"
+                              src={`/logos/${logo}`}
+                              alt={logo}
+                         />
+                    </motion.div>
                ))}
           </Container>
      );

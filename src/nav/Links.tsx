@@ -43,12 +43,12 @@ function giveList(justifyContent, isMobile) {
                // }}
           >
                <Link to="/services">
-                    <Stack direction="row" spacing={2} alignItems="center">
+                    <Stack direction="row" spacing={1} alignItems="center">
                          <CleanHandsOutlined style={{ color: "white" }} />
                          <Typography
                               style={{
                                    color: "white",
-                                   textAlign: "center",
+                                   textAlign: "start",
                                    fontFamily: "Poppins",
                               }}
                          >
@@ -62,7 +62,7 @@ function giveList(justifyContent, isMobile) {
                          <Typography
                               style={{
                                    color: "white",
-                                   textAlign: "center",
+                                   textAlign: "start",
                                    fontFamily: "Poppins",
                               }}
                          >
@@ -76,7 +76,7 @@ function giveList(justifyContent, isMobile) {
                          <Typography
                               style={{
                                    color: "white",
-                                   textAlign: "center",
+                                   textAlign: "start",
                                    fontFamily: "Poppins",
                               }}
                          >

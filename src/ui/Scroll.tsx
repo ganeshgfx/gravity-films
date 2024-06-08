@@ -1,25 +1,23 @@
 import React from "react";
-import { motion, useTransform, useScroll } from "framer-motion";
+import { motion, useTransform, useScroll, useSpring } from "framer-motion";
 import { useRef } from "react";
 import HoverCard from "./HoverCard";
 import { LearnMore } from "./LearnMore";
-import { Container } from "@mui/joy";
 import Title from "./Title";
 export default function Scroll() {
      const targetRef = useRef(null);
      const { scrollYProgress } = useScroll({
           target: targetRef,
      });
-
-     const x = useTransform(scrollYProgress, [0, 1], ["1%", "-100%"]);
-     const x2 = useTransform(scrollYProgress, [0, 1], ["1%", "100%"]);
-     const o = useTransform(scrollYProgress, [0, 1], ["1%", "100%"]);
+     const smoothProgress = useSpring(scrollYProgress, { mass: 0.1 });
+     const x = useTransform(smoothProgress, [0, 1], ["1%", "-100%"]);
+     const x2 = useTransform(smoothProgress, [0, 1], ["1%", "100%"]);
+     const o = useTransform(smoothProgress, [0, 1], ["1%", "100%"]);
      return (
           <>
-               {/* <div className="mask-top" /> */}
                <section
                     ref={targetRef}
-                    className="relative h-[300vh] md:h-[300vh] mask"
+                    className="relative h-[300vh] md:h-[300vh]"
                >
                     <div
                          style={{
@@ -30,7 +28,14 @@ export default function Scroll() {
                     >
                          <Title title="Our Work" />
                     </div>
-                    <div className="sticky top-0 flex h-screen items-center overflow-hidden justify-center">
+                    <div
+                         style={{
+                              width: "100%",
+                              height: "100px",
+                         }}
+                         className="wave bg2"
+                    />
+                    <div className="sticky top-0 flex h-screen items-center overflow-hidden justify-center bg2">
                          <motion.div
                               style={{
                                    height: "100%",
@@ -44,10 +49,26 @@ export default function Scroll() {
                               }}
                          >
                               <LearnMore />
-                              <div>
+                              <div
+                                   style={{
+                                        width: "100%",
+                                        height: "100px",
+                                   }}
+                                   className="wave bg1"
+                              />
+                              <div
+                                   style={{
+                                        width: "100%",
+
+                                        display: "flex",
+                                        justifyContent: "center",
+                                   }}
+                                   className="bg1"
+                              >
                                    <Title title="Our Clients" />
                               </div>
                          </motion.div>
+
                          <div>
                               <motion.div style={{ x }} className="flex gap-4">
                                    {cards1.map((card) => {
@@ -66,6 +87,13 @@ export default function Scroll() {
                                         );
                                    })}
                               </motion.div>
+                              <motion.div style={{ x }} className="flex gap-4">
+                                   {cards1.map((card) => {
+                                        return (
+                                             <Card card={card} key={card.id} />
+                                        );
+                                   })}
+                              </motion.div>
                          </div>
                     </div>
                </section>
@@ -73,27 +101,7 @@ export default function Scroll() {
      );
 }
 const Card = ({ card }) => {
-     return (
-          <HoverCard data={card} />
-          // <div
-          //      key={card.id}
-          //      className="group relative h-[512px] w-[512px] overflow-hidden bg-neutral-200"
-          // >
-          //      <div
-          //           style={{
-          //                backgroundImage: `url(${card.url})`,
-          //                backgroundSize: "cover",
-          //                backgroundPosition: "center",
-          //           }}
-          //           className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
-          //      ></div>
-          //      <div className="absolute inset-0 z-10 grid place-content-center">
-          //           <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
-          //                {card.title}
-          //           </p>
-          //      </div>
-          // </div>
-     );
+     return <HoverCard data={card} />;
 };
 const cards1 = [
      {

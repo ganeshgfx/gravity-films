@@ -6,48 +6,20 @@
 
      color-scheme: light dark;
      color: rgba(255, 255, 255, 0.87);
-     background-color: #121212;
+     background-color: #1a1a1a;
 
      font-synthesis: none;
      text-rendering: optimizeLegibility;
      -webkit-font-smoothing: antialiased;
      -moz-osx-font-smoothing: grayscale;
 }
-body {
+body,
+html {
      margin: 0px;
      padding: 0px;
      font-family: "Poppins", sans-serif !important;
-     background-color: #121212;
+     background-color: #1a1a1a;
 }
-.hoverText {
-     transition: 0.35s font-weight, 0.35s color;
-}
-
-.hoverText:hover {
-     font-weight: 900;
-     color: rgb(238, 242, 255);
-}
-
-/* To the right */
-.hoverText:hover + .hoverText {
-     font-weight: 500;
-     color: rgb(199, 210, 254);
-}
-
-.hoverText:hover + .hoverText + .hoverText {
-     font-weight: 300;
-}
-
-/* To the left */
-.hoverText:has(+ .hoverText:hover) {
-     font-weight: 500;
-     color: rgb(199, 210, 254);
-}
-
-.hoverText:has(+ .hoverText + .hoverText:hover) {
-     font-weight: 300;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

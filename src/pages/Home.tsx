@@ -1,4 +1,10 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import {
+     MotionValue,
+     motion,
+     useScroll,
+     useSpring,
+     useTransform,
+} from "framer-motion";
 import React, { useRef } from "react";
 import { Sparkles } from "./Sparkle";
 import Background from "./Background";
@@ -15,16 +21,25 @@ import {
 import { Container } from "@mui/joy";
 import { TextGenerateEffect } from "../ui/Text-generate-effect";
 import HeadText from "../ui/HeadText";
+import ShuffleHero from "../ui/ShuffleHero";
 
 export default function Home() {
      const ref = useRef(null);
+
      const { scrollYProgress } = useScroll({
           target: ref,
           offset: ["start start", "end start"],
      });
+     const smoothProgress = useSpring(scrollYProgress, { mass: 0.1 });
      //get true if  width is geater than height
-     const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-     const textY = useTransform(scrollYProgress, [0, 1], ["0%", "250%"]);
+     const backgroundY = useTransform(smoothProgress, [0, 1], ["0%", "100%"]);
+     let textY = new MotionValue<string>();
+     const isMobile = window.innerWidth <= 768;
+     if (isMobile) {
+          textY = useTransform(smoothProgress, [0, 1], ["0%", "120%"]);
+     } else {
+          textY = useTransform(smoothProgress, [0, 1], ["0%", "200%"]);
+     }
      return (
           <>
                <div
@@ -118,6 +133,7 @@ export default function Home() {
                          }}
                     />
                </div>
+               <ShuffleHero />
                <Scroll />
                <Logos />
                {/* <LogoSlider /> */}
