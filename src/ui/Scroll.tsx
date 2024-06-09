@@ -100,6 +100,7 @@ export default function Scroll() {
           </>
      );
 }
+
 const Card = ({ card }) => {
      return <HoverCard data={card} />;
 };
@@ -174,7 +175,6 @@ const cards2 = [
           title: "My Fitness Peanut Butter.",
           id: 13,
      },
-     //
      {
           url: "/brands/ig.png",
           title: "Indiegrow Fusion",

@@ -1,43 +1,10 @@
-import {
-     Box,
-     Container,
-     Divider,
-     Grid,
-     List,
-     ListItem,
-     ListItemButton,
-     ListItemContent,
-     ListItemDecorator,
-     Stack,
-     Typography,
-} from "@mui/joy";
+import { Container, Grid, Stack, Typography } from "@mui/joy";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import React from "react";
-import TrailsText from "./TrailsText";
-import {
-     AnimationTwoTone,
-     AutoFixHighTwoTone,
-     CampaignTwoTone,
-     Circle,
-     ContentCutTwoTone,
-     DrawTwoTone,
-     KeyboardArrowLeft,
-     KeyboardArrowRight,
-     LanguageTwoTone,
-     LocalSeeTwoTone,
-     MovieFilterTwoTone,
-     MusicNoteTwoTone,
-     StayCurrentPortraitTwoTone,
-     StickyNote2TwoTone,
-     SupportAgentTwoTone,
-     TheaterComedyTwoTone,
-     TipsAndUpdatesTwoTone,
-     VideocamTwoTone,
-     ViewInArTwoTone,
-} from "@mui/icons-material";
+import { KeyboardArrowRight } from "@mui/icons-material";
 import Title from "./Title";
-import { servicesData as services } from "./ServicesData";
+import { servicesData as services } from "../data/ServicesData";
 const ShuffleHero = () => {
      return (
           <Container maxWidth="xl">

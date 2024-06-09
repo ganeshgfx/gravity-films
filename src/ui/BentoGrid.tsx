@@ -1,33 +1,72 @@
 import React from "react";
 import { cn } from "../utils/cn";
 import {
-     IconArrowWaveRightUp,
-     IconBoxAlignRightFilled,
-     IconBoxAlignTopLeft,
      IconClipboardCopy,
      IconFileBroken,
      IconSignature,
-     IconTableColumn,
 } from "@tabler/icons-react";
-
+import Title from "./Title";
+import { servicesData } from "../data/ServicesData";
+import { Box, Card, CardOverflow, Typography } from "@mui/joy";
+import Modal from "./Modal";
 export function BentoGridUi() {
      return (
-          <>
-               <BentoGrid>
-                    {items.map((item, i) => (
-                         <BentoGridItem
-                              key={i}
-                              title={item.title}
-                              description={item.description}
-                              header={item.header}
-                              icon={item.icon}
-                              className={
-                                   i === 3 || i === 6 ? "md:col-span-2" : ""
-                              }
-                         />
-                    ))}
-               </BentoGrid>
-          </>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mx-auto">
+               {servicesData.map((data, index) => (
+                    <div key={index}>
+                         <Card
+                              sx={{
+                                   backgroundColor: "#1e1e1e",
+                                   borderRadius: "16px",
+                                   display: "flex",
+                                   flexDirection: "column",
+                                   cursor: "pointer",
+                              }}
+                              key={index}
+                         >
+                              <CardOverflow
+                                   className="service-icon"
+                                   sx={{
+                                        display: "grid",
+                                        placeItems: "end",
+                                        backgroundColor: "#262626",
+                                        py: 2,
+                                   }}
+                              >
+                                   {data.icon}
+                              </CardOverflow>
+                              <div
+                                   style={{
+                                        color: "white",
+                                        fontSize: "1.5rem",
+                                        marginLeft: ".5rem",
+                                   }}
+                              >
+                                   <Title title={data.title} center={false} />
+                              </div>
+                              <Typography sx={{ flexGrow: 1, ml: ".5rem" }}>
+                                   {data.text}
+                              </Typography>
+                              <Modal>
+                                   <BentoGrid>
+                                        {items.map((item, i) => (
+                                             <BentoGridItem
+                                                  key={i}
+                                                  title={item.title}
+                                                  description={item.description}
+                                                  className={
+                                                       i === 3 || i === 6
+                                                            ? "md:col-span-2"
+                                                            : ""
+                                                  }
+                                             />
+                                        ))}
+                                   </BentoGrid>
+                              </Modal>
+                         </Card>
+                    </div>
+               ))}
+          </div>
      );
 }
 const Skeleton = () => (
@@ -38,21 +77,15 @@ const items = [
           title: "The Dawn of Innovation",
           description:
                "Explore the birth of groundbreaking ideas and inventions.",
-          header: <Skeleton />,
-          icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
      },
      {
           title: "The Digital Revolution",
           description: "Dive into the transformative power of technology.",
-          header: <Skeleton />,
-          icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
      },
      {
           title: "The Art of Design",
           description:
                "Discover the beauty of thoughtful and functional design.",
-          header: <Skeleton />,
-          icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
      },
 ];
 
@@ -79,8 +112,6 @@ const BentoGridItem = ({
      className,
      title,
      description,
-     header,
-     icon,
 }: {
      className?: string;
      title?: string | React.ReactNode;
@@ -96,12 +127,11 @@ const BentoGridItem = ({
                )}
                style={{ borderColor: "#3a3a3a", backgroundColor: "#1f1f1f" }}
           >
-               {header}
+               <Skeleton />
                <div
                     className="group-hover/bento:translate-x-2 transition duration-200"
                     style={{ color: "white" }}
                >
-                    {icon}
                     <div
                          className="font-sans font-bold text-neutral-600 :text-neutral-200 mb-2 mt-2"
                          style={{ color: "white" }}

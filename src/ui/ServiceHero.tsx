@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Title from "./Title";
-import { Card, Divider, Stack, Typography } from "@mui/joy";
+import { Box, Card, Divider, Stack, Typography } from "@mui/joy";
 import {
      motion,
      useMotionTemplate,
@@ -10,9 +10,9 @@ import {
 import AnimatedTextCharacter from "./AnimatedTextCharacter";
 export default function ServiceHero() {
      return (
-          <Card
+          <Box
                sx={{
-                    p: "24px",
+                    pt: "24px",
                     mb: "16px",
                     borderRadius: "16px",
                }}
@@ -56,7 +56,7 @@ export default function ServiceHero() {
                          }}
                     />
                </motion.div>
-          </Card>
+          </Box>
      );
 }
 const datas = [

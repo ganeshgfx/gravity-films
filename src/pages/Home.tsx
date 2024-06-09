@@ -22,6 +22,7 @@ import { Container } from "@mui/joy";
 import { TextGenerateEffect } from "../ui/Text-generate-effect";
 import HeadText from "../ui/HeadText";
 import ShuffleHero from "../ui/ShuffleHero";
+import WorkScroll from "../ui/WorkScroll";
 
 export default function Home() {
      const ref = useRef(null);
@@ -41,14 +42,14 @@ export default function Home() {
           textY = useTransform(smoothProgress, [0, 1], ["0%", "200%"]);
      }
      return (
-          <>
+          <div>
                <div
                     ref={ref}
                     className="w-full h-screen overflow-hidden relative grid"
                >
                     <motion.div
                          style={{ y: textY }}
-                         className="relative  z-40 mb-100 md:mb-80 text-center"
+                         className="relative  z-40 mb-100 md:mb-80 text-center "
                     >
                          <div className="header">
                               <div
@@ -135,8 +136,9 @@ export default function Home() {
                </div>
                <ShuffleHero />
                <Scroll />
+               {/* <WorkScroll /> */}
                <Logos />
                {/* <LogoSlider /> */}
-          </>
+          </div>
      );
 }
