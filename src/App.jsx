@@ -4,7 +4,7 @@ import './App.css'
 import Home from './pages/Home'
 import theme from './theme'
 import Nav from './nav/Nav'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, HashRouter } from 'react-router-dom'
 import About from './pages/About'
 import Services from './pages/Services'
 import Portfolio from './pages/Portfolio'
@@ -21,7 +21,7 @@ function App() {
                     modeStorageKey="demo_dark-mode-by-default"
                     disableNestedContext
                />
-               <BrowserRouter>
+               <HashRouter>
                     <Nav />
                     <Routes>
 
@@ -39,7 +39,7 @@ function App() {
 
                     </Routes>
                     <Footer />
-               </BrowserRouter>
+               </HashRouter>
           </React.Fragment>
      )
 }
