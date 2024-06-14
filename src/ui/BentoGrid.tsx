@@ -6,9 +6,10 @@ import {
      IconSignature,
 } from "@tabler/icons-react";
 import Title from "./Title";
-import { servicesData } from "../data/ServicesData";
+import { LOGOS_IDS, portfolioData, servicesData } from "../data/ServicesData";
 import { Box, Card, CardOverflow, Typography } from "@mui/joy";
 import Modal from "./Modal";
+import { DirectionAwareHover } from "./DirectionAwareHover";
 export function BentoGridUi() {
      return (
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mx-auto">
@@ -48,8 +49,17 @@ export function BentoGridUi() {
                                    {data.text}
                               </Typography>
                               <Modal>
-                                   <BentoGrid>
-                                        {items.map((item, i) => (
+                                   <div
+                                        style={{
+                                             display: "flex",
+                                             flexWrap: "wrap",
+                                             justifyContent: "center",
+                                             gap: "1rem",
+                                             marginTop: "1rem",
+                                             marginBottom: "1rem",
+                                        }}
+                                   >
+                                        {/* {items.map((item, i) => (
                                              <BentoGridItem
                                                   key={i}
                                                   title={item.title}
@@ -60,8 +70,18 @@ export function BentoGridUi() {
                                                             : ""
                                                   }
                                              />
-                                        ))}
-                                   </BentoGrid>
+                                        ))} */}
+                                        {portfolioData
+                                             .get(LOGOS_IDS.HERMOD)
+                                             .map((item, i) => (
+                                                  // <img src={item} />
+
+                                                  <DirectionAwareHover
+                                                       imageUrl={item}
+                                                       children={undefined}
+                                                  ></DirectionAwareHover>
+                                             ))}
+                                   </div>
                               </Modal>
                          </Card>
                     </div>

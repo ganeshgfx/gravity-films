@@ -44,9 +44,9 @@ const SpringModal = ({ isOpen, setIsOpen, children }) => {
                          style={{
                               zIndex: 9999,
                               display: "grid",
-                              justifyContent: "center",
-                              alignItems: "center",
-                              alignContent: "center",
+                              // justifyContent: "space-around",
+                              // alignItems: "center",
+                              // alignContent: "center",
                          }}
                          onClick={() => setIsOpen(false)}
                          className="bg-slate-900/20 backdrop-blur fixed inset-0 z-50 grid place-items-center overflow-y-scroll cursor-pointer"
@@ -55,6 +55,7 @@ const SpringModal = ({ isOpen, setIsOpen, children }) => {
                               style={{
                                    color: "white",
                                    position: "absolute",
+                                   zIndex: 999999,
                                    top: 0,
                                    right: 0,
                                    margin: "1.5rem",
@@ -79,10 +80,9 @@ const SpringModal = ({ isOpen, setIsOpen, children }) => {
                                    width: "100%",
                                    height: "100%",
                               }}
-                              className=" text-white rounded-lg shadow-xl cursor-default relative overflow-hidden"
+                              className=" text-white rounded-lg shadow-xl cursor-default relative "
                          >
-                              <Container maxWidth="xl">
-                                   {/* <div className="z-10 p-10">
+                              {/* <div className="z-10 p-10">
                                         <h3 className="text-3xl font-bold text-center mb-2">
                                              One more thing!
                                         </h3>
@@ -111,8 +111,7 @@ const SpringModal = ({ isOpen, setIsOpen, children }) => {
                                              </button>
                                         </div>
                                    </div> */}
-                                   {children}
-                              </Container>
+                              {children}
                          </motion.div>
                     </motion.div>
                )}
