@@ -14,6 +14,7 @@ function App() {
 
      return (
           <React.Fragment>
+
                <CssVarsProvider
                     theme={theme}
                     defaultMode="dark"

@@ -314,3 +314,9 @@
      height: 100px;
      opacity: 75%;
 }
+.contact-icon > svg {
+     width: 70px;
+     height: 70px;
+     opacity: 75%;
+}
+/* dock */

@@ -504,6 +504,95 @@ export const logos = [
           ],
      },
 ];
+
+export const servicesToBrands = new Map();
+
+servicesToBrands.set(FILM_MAKING, [
+     LOGOS_IDS.NUTS_N_JARS,
+     LOGOS_IDS.HINDUSTAN_UNILEVER,
+     LOGOS_IDS.NIFT,
+     LOGOS_IDS.SCREATION_FILMS,
+     LOGOS_IDS.COFFEE_CUP_INDIA,
+     LOGOS_IDS.ARV_REALTY,
+     LOGOS_IDS.TRI_DRASHYA,
+]);
+
+servicesToBrands.set(CINEMATOGRAPHY, [
+     LOGOS_IDS.HERMOD,
+     LOGOS_IDS.NIFT,
+     LOGOS_IDS.SCREATION_FILMS,
+     LOGOS_IDS.COFFEE_CUP_INDIA,
+     LOGOS_IDS.ARV_REALTY,
+     LOGOS_IDS.TRI_DRASHYA,
+]);
+
+servicesToBrands.set(PHOTOGRAPHY, [
+     LOGOS_IDS.HERMOD,
+     LOGOS_IDS.NUTS_N_JARS,
+     LOGOS_IDS.HINDUSTAN_UNILEVER,
+     LOGOS_IDS.SCREATION_FILMS,
+     LOGOS_IDS.COFFEE_CUP_INDIA,
+     LOGOS_IDS.ARV_REALTY,
+     LOGOS_IDS.TRI_DRASHYA,
+]);
+
+servicesToBrands.set(EDITING, [
+     LOGOS_IDS.HERMOD,
+     LOGOS_IDS.NUTS_N_JARS,
+     LOGOS_IDS.SCREATION_FILMS,
+     LOGOS_IDS.COFFEE_CUP_INDIA,
+     LOGOS_IDS.ARV_REALTY,
+     LOGOS_IDS.TRI_DRASHYA,
+]);
+
+servicesToBrands.set(VFX_CGI, [
+     LOGOS_IDS.HINDUSTAN_UNILEVER,
+     LOGOS_IDS.INDIEGROW_FUSION,
+]);
+
+servicesToBrands.set(DIRECTING, [
+     LOGOS_IDS.SCREATION_FILMS,
+     LOGOS_IDS.COFFEE_CUP_INDIA,
+     LOGOS_IDS.ARV_REALTY,
+     LOGOS_IDS.TRI_DRASHYA,
+]);
+
+servicesToBrands.set(WEBSITE_DEVELOPMENT, [LOGOS_IDS.INDIEGROW_FUSION]);
+
+servicesToBrands.set(APP_DEVELOPMENT, [LOGOS_IDS.INDIEGROW_FUSION]);
+
+servicesToBrands.set(GRAPHICS_DESIGN, [
+     LOGOS_IDS.INDIEGROW_FUSION,
+     LOGOS_IDS.ARV_REALTY,
+     LOGOS_IDS.TRI_DRASHYA,
+     LOGOS_IDS.FOREIGN_ROUTES,
+     LOGOS_IDS.DR_INTERNATIONALS,
+]);
+
+servicesToBrands.set(ANIMATIONS, [
+     LOGOS_IDS.INDIEGROW_FUSION,
+     LOGOS_IDS.TRI_DRASHYA,
+]);
+
+servicesToBrands.set(TECH_SUPPORT, [LOGOS_IDS.INDIEGROW_FUSION]);
+
+servicesToBrands.set(BRAND_BUILDING, [
+     LOGOS_IDS.INDIEGROW_FUSION,
+     LOGOS_IDS.ARV_REALTY,
+     LOGOS_IDS.FOREIGN_ROUTES,
+     LOGOS_IDS.DR_INTERNATIONALS,
+]);
+
+servicesToBrands.set(DIGITAL_MARKETING, [LOGOS_IDS.INDIEGROW_FUSION]);
+
+servicesToBrands.set(CONTENT_WRITING, [
+     LOGOS_IDS.INDIEGROW_FUSION,
+     LOGOS_IDS.TRI_DRASHYA,
+     LOGOS_IDS.FOREIGN_ROUTES,
+]);
+
+servicesToBrands.set(MUSIC_SOUNDS, [LOGOS_IDS.ARV_REALTY]);
+
 export const portfolioData = new Map();
 portfolioData.set(LOGOS_IDS.HERMOD, [
      "/brands/hermod/a1.jpg",
@@ -532,3 +621,15 @@ portfolioData.set(LOGOS_IDS.HERMOD, [
      "/brands/hermod/c6.jpg",
      "/brands/hermod/c7.jpg",
 ]);
+portfolioData.set(LOGOS_IDS.NUTS_N_JARS, []);
+portfolioData.set(LOGOS_IDS.HINDUSTAN_UNILEVER, []);
+portfolioData.set(LOGOS_IDS.NIFT, []);
+portfolioData.set(LOGOS_IDS.SCREATION_FILMS, []);
+portfolioData.set(LOGOS_IDS.INDIEGROW_FUSION, []);
+portfolioData.set(LOGOS_IDS.COFFEE_CUP_INDIA, []);
+portfolioData.set(LOGOS_IDS.TRI_DRASHYA, []);
+portfolioData.set(LOGOS_IDS.HAZELCOP, []);
+portfolioData.set(LOGOS_IDS.MYFITNESS, []);
+portfolioData.set(LOGOS_IDS.ARV_REALTY, []);
+portfolioData.set(LOGOS_IDS.FOREIGN_ROUTES, []);
+portfolioData.set(LOGOS_IDS.DR_INTERNATIONALS, []);

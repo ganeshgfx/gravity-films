@@ -6,7 +6,12 @@ import {
      IconSignature,
 } from "@tabler/icons-react";
 import Title from "./Title";
-import { LOGOS_IDS, portfolioData, servicesData } from "../data/ServicesData";
+import {
+     LOGOS_IDS,
+     portfolioData,
+     servicesData,
+     servicesToBrands,
+} from "../data/ServicesData";
 import { Box, Card, CardOverflow, Typography } from "@mui/joy";
 import Modal from "./Modal";
 import { DirectionAwareHover } from "./DirectionAwareHover";
@@ -59,20 +64,9 @@ export function BentoGridUi() {
                                              marginBottom: "1rem",
                                         }}
                                    >
-                                        {/* {items.map((item, i) => (
-                                             <BentoGridItem
-                                                  key={i}
-                                                  title={item.title}
-                                                  description={item.description}
-                                                  className={
-                                                       i === 3 || i === 6
-                                                            ? "md:col-span-2"
-                                                            : ""
-                                                  }
-                                             />
-                                        ))} */}
-                                        {portfolioData
-                                             .get(LOGOS_IDS.HERMOD)
+                                        {/* {getBrandData(data.id)} */}
+                                        {/* {portfolioData
+                                             .get(data.id)
                                              .map((item, i) => (
                                                   // <img src={item} />
 
@@ -80,7 +74,7 @@ export function BentoGridUi() {
                                                        imageUrl={item}
                                                        children={undefined}
                                                   ></DirectionAwareHover>
-                                             ))}
+                                             ))} */}
                                    </div>
                               </Modal>
                          </Card>
@@ -168,3 +162,9 @@ const BentoGridItem = ({
           </div>
      );
 };
+function getBrandData(id: string) {
+     const brands = servicesToBrands.get(id).map((brandId, i) => {
+          getBrandData(brandId);
+     });
+     return brands;
+}

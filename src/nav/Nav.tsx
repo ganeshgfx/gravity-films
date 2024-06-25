@@ -71,12 +71,32 @@ function Nav() {
                               href="https://instagram.com/gravity.films_"
                               target="_blank"
                          >
-                              <IconButton aria-label="Instagram">
+                              <IconButton
+                                   sx={{
+                                        //hover effect
+                                        transition: "0.5s",
+                                        "&:hover": {
+                                             backgroundColor:
+                                                  "rgba(255,255,255,0.1)",
+                                        },
+                                   }}
+                                   aria-label="Instagram"
+                              >
                                    <Instagram style={{ color: "white" }} />
                               </IconButton>
                          </a>
                          <a href="https://wa.me/919033535655" target="_blank">
-                              <IconButton aria-label="WhatsApp">
+                              <IconButton
+                                   sx={{
+                                        //hover effect
+                                        transition: "0.5s",
+                                        "&:hover": {
+                                             backgroundColor:
+                                                  "rgba(255,255,255,0.1)",
+                                        },
+                                   }}
+                                   aria-label="WhatsApp"
+                              >
                                    <WhatsApp style={{ color: "white" }} />
                               </IconButton>
                          </a>
@@ -84,7 +104,17 @@ function Nav() {
                               href="mailto:info@gravityfilms.space"
                               target="_blank"
                          >
-                              <IconButton aria-label="Email">
+                              <IconButton
+                                   sx={{
+                                        //hover effect
+                                        transition: "0.5s",
+                                        "&:hover": {
+                                             backgroundColor:
+                                                  "rgba(255,255,255,0.1)",
+                                        },
+                                   }}
+                                   aria-label="Email"
+                              >
                                    <MailOutline style={{ color: "white" }} />
                               </IconButton>
                          </a>

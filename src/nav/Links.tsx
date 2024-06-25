@@ -32,18 +32,32 @@ const Links = (props: any) => {
      return ui2;
 };
 function giveList(justifyContent, isMobile) {
+     const btnStle = {
+          px: 1,
+          py: 0.7,
+          transition: "0.5s",
+          "&:hover": {
+               backgroundColor: "rgba(255,255,255,0.1)",
+               borderRadius: "10px",
+          },
+     };
+
      return (
           <Stack
                direction="row"
                justifyContent={justifyContent}
-               spacing={2}
                alignItems="center"
                // sx={{
                //      width: isMobile ? "100%" : "unset",
                // }}
           >
                <Link to="/services">
-                    <Stack direction="row" spacing={1} alignItems="center">
+                    <Stack
+                         direction="row"
+                         spacing={0.5}
+                         alignItems="center"
+                         sx={btnStle}
+                    >
                          <CleanHandsOutlined style={{ color: "white" }} />
                          <Typography
                               style={{
@@ -57,7 +71,12 @@ function giveList(justifyContent, isMobile) {
                     </Stack>
                </Link>
                <Link to="/portfolio">
-                    <Stack direction="row" alignItems="center" spacing={1}>
+                    <Stack
+                         sx={btnStle}
+                         direction="row"
+                         alignItems="center"
+                         spacing={0.5}
+                    >
                          <WorkOutline style={{ color: "white" }} />
                          <Typography
                               style={{
@@ -71,16 +90,22 @@ function giveList(justifyContent, isMobile) {
                     </Stack>
                </Link>
                <Link to="/about">
-                    <Stack direction="row" alignItems="center" spacing={1}>
+                    <Stack
+                         sx={btnStle}
+                         direction="row"
+                         alignItems="center"
+                         spacing={0.5}
+                    >
                          <IconInfoCircle style={{ color: "white" }} />
                          <Typography
-                              style={{
+                              sx={{
                                    color: "white",
                                    textAlign: "start",
                                    fontFamily: "Poppins",
+                                   wordBreak: "keep-all",
                               }}
                          >
-                              About Us
+                              About&nbsp;Us
                          </Typography>
                     </Stack>
                </Link>
