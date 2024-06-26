@@ -5,6 +5,7 @@ import {
      InfoRounded,
      InfoTwoTone,
      Instagram,
+     LinkedIn,
      Mail,
      MailOutline,
      WhatsApp,
@@ -16,6 +17,7 @@ import { IconInfoCircle } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
 import Links from "./Links";
 import { useMediaQuery } from "@mui/material";
+import { GrLinkedinOption } from "react-icons/gr";
 import React from "react";
 function Nav() {
      const isSmallScreen = useMediaQuery("(max-width:768px)");
@@ -116,6 +118,27 @@ function Nav() {
                                    aria-label="Email"
                               >
                                    <MailOutline style={{ color: "white" }} />
+                              </IconButton>
+                         </a>
+                         {/* https://www.linkedin.com/company/gravityfilms */}
+                         <a
+                              href="https://www.linkedin.com/company/gravityfilms"
+                              target="_blank"
+                         >
+                              <IconButton
+                                   sx={{
+                                        //hover effect
+                                        transition: "0.5s",
+                                        "&:hover": {
+                                             backgroundColor:
+                                                  "rgba(255,255,255,0.1)",
+                                        },
+                                   }}
+                                   aria-label="LinkedIn"
+                                   className="svg-container"
+                              >
+                                   {/* <LinkedIn style={{ color: "white" }} /> */}
+                                   <GrLinkedinOption />
                               </IconButton>
                          </a>
                     </Stack>

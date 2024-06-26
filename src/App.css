@@ -246,6 +246,9 @@
           width: 64px;
           height: 64px;
      }
+     .story-text {
+          font-size: 1em !important;
+     }
 }
 @media only screen and (max-width: 1024px) {
      .layer {
@@ -319,4 +322,9 @@
      height: 70px;
      opacity: 75%;
 }
-/* dock */
+/* circle grid */
+.svg-container > svg {
+     height: 100%;
+     width: 100%;
+     padding: 3px;
+}

@@ -10,7 +10,10 @@ export function BackgroundBeamsDemo() {
                     textAlign: "center",
                }}
           >
-               <div className=" mx-auto p-16">
+               <div
+                    className=" mx-auto px-6 py-10 md:px-10
+               "
+               >
                     <h1 className=" text-2xl">
                          Gravity Films was originally built by young creators
                          with creative minds and a skilled tech team.

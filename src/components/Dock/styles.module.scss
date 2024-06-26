@@ -1,5 +1,5 @@
 .dock {
-  position: fixed;
+//   position: fixed;
   bottom: 12px;
   left: 50%;
   transform: translateX(-50%);
@@ -9,7 +9,7 @@
   padding: 10px;
   padding-bottom: 6px;
   gap: 12px;
-  background-color: rgba(0, 0, 0, 0.92);
+//   background-color: rgba(0, 0, 0, 0.92);
   will-change: contents;
   box-sizing: content-box;
   border-radius: 12px;

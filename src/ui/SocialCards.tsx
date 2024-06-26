@@ -9,18 +9,18 @@ import {
 } from "react-icons/fi";
 import { BsWhatsapp } from "react-icons/bs";
 import { HiPhoneArrowUpRight } from "react-icons/hi2";
-
+import { GrLinkedinOption } from "react-icons/gr";
 const SocialCards = () => {
      return (
           <div className="p-4">
-               <div className="grid gap-4 grid-cols-2 lg:grid-cols-4">
+               <div className="grid gap-2 grid-cols-2 lg:grid-cols-5">
                     <Card
                          title="Email"
                          subtitle="Mail Us"
                          href="mailto:info@gravityfilms.space"
                          Icon={FiMail}
-                         bgColor="#07195299"
-                         color="#071952"
+                         bgColor="#8B322C99"
+                         color="#8B322C"
                     />
                     <Card
                          title="Instagram"
@@ -46,6 +46,14 @@ const SocialCards = () => {
                          bgColor="#5E167599"
                          color="#5E1675"
                     />
+                    <Card
+                         title="LinkedIn"
+                         subtitle="Connect With Us"
+                         href="/team"
+                         Icon={GrLinkedinOption}
+                         bgColor="#07195299"
+                         color="#071952"
+                    />
                </div>
           </div>
      );
@@ -56,7 +64,7 @@ const Card = ({ title, subtitle, Icon, href, bgColor, color }) => {
           <a
                href={href}
                target="_blank"
-               className="w-full p-4 border-[1px] relative overflow-hidden group bg-white"
+               className="p-4 border-[1px] relative overflow-hidden group bg-white"
                style={{
                     backgroundColor: opacity(bgColor),
                     borderColor: "#9f9f9f",

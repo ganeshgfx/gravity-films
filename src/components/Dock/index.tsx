@@ -35,36 +35,54 @@ export const Dock = ({ children }: DockProps) => {
      });
 
      return (
-          <DockContext.Provider
-               value={{ hovered, setIsZooming, width, zoomLevel }}
-          >
-               <animated.div
-                    ref={dockRef}
-                    className={styles.dock}
-                    onMouseOver={() => {
-                         if (!isZooming.current) {
-                              setHovered(true);
-                         }
-                    }}
-                    onMouseOut={() => {
-                         setHovered(false);
-                    }}
-                    style={{
-                         x: "-50%",
-                         scale: zoomLevel
-                              .to({
-                                   range: [
-                                        DOCK_ZOOM_LIMIT[0],
-                                        1,
-                                        DOCK_ZOOM_LIMIT[1],
-                                   ],
-                                   output: [2, 1, 0.5],
-                              })
-                              .to((value) => clamp(0.5, 2, value)),
-                    }}
-               >
-                    {children}
-               </animated.div>
-          </DockContext.Provider>
+          <div>
+               <div className="hidden md:block">
+                    <DockContext.Provider
+                         value={{ hovered, setIsZooming, width, zoomLevel }}
+                    >
+                         <animated.div
+                              ref={dockRef}
+                              className={styles.dock}
+                              onMouseOver={() => {
+                                   if (!isZooming.current) {
+                                        setHovered(true);
+                                   }
+                              }}
+                              onMouseOut={() => {
+                                   setHovered(false);
+                              }}
+                              style={{
+                                   x: "0%",
+                                   scale: zoomLevel
+                                        .to({
+                                             range: [
+                                                  DOCK_ZOOM_LIMIT[0],
+                                                  1,
+                                                  DOCK_ZOOM_LIMIT[1],
+                                             ],
+                                             output: [2, 1, 0.5],
+                                        })
+                                        .to((value) => clamp(0.5, 2, value)),
+                              }}
+                         >
+                              {children}
+                         </animated.div>
+                    </DockContext.Provider>
+               </div>
+               <div className="block md:hidden">
+                    <div
+                         style={{
+                              display: "grid",
+                              gridTemplateColumns: "repeat(6, 0.1fr)",
+                              gridTemplateRows: "repeat(4,0.1fr)",
+                              justifyContent: "center",
+                              alignItems: "center",
+                              gap: "1rem",
+                         }}
+                    >
+                         {children}
+                    </div>
+               </div>
+          </div>
      );
 };
