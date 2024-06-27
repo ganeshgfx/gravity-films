@@ -123,6 +123,8 @@ export const DockCard = ({ children }: DockCardProps) => {
 
      React.useEffect(() => () => clearTimeout(timeoutRef.current), []);
 
+     const [hovered, setHovered] = React.useState(false);
+
      return (
           <motion.div
                whileHover={{ scale: 1.1 }}
@@ -145,11 +147,27 @@ export const DockCard = ({ children }: DockCardProps) => {
                     }}
                >
                     <div className={styles["dock-card-container"]}>
-                         <motion.span>Name</motion.span>
+                         <motion.span
+                              initial={{ opacity: 0 }}
+                              animate={{ opacity: 1 }}
+                              exit={{ opacity: 0 }}
+                              transition={{ delay: 1 }}
+                              style={{
+                                   display: hovered ? "block" : "none",
+                              }}
+                         >
+                              Name
+                         </motion.span>
                          <animated.button
                               ref={cardRef}
                               className={styles["dock-card"]}
                               // onClick={handleClick}
+                              onMouseEnter={() => {
+                                   setHovered(true);
+                              }}
+                              onMouseLeave={() => {
+                                   setHovered(false);
+                              }}
                               style={{
                                    width: size,
                                    height: size,

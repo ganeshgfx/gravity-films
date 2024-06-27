@@ -44,7 +44,10 @@ export default function Home() {
                          className="relative  z-40 mb-100 md:mb-80 text-center "
                     >
                          <div className="header">
-                              <div
+                              <motion.div
+                                   initial={{ opacity: 0 }}
+                                   animate={{ opacity: 1 }}
+                                   transition={{ duration: 1, delay: 0.4 }}
                                    className="main-logo"
                                    style={{
                                         display: "flex",
@@ -62,7 +65,7 @@ export default function Home() {
                                         <Gravity />
                                         {/* <OrbitControls /> */}
                                    </Canvas>
-                              </div>
+                              </motion.div>
                               <div
                                    style={{
                                         display: "flex",
@@ -87,13 +90,41 @@ export default function Home() {
                                                   zIndex: 1,
                                              }}
                                         >
-                                             <span className="main-text-1">
+                                             <motion.span
+                                                  initial={{
+                                                       opacity: 0,
+                                                  }}
+                                                  animate={{ opacity: 1 }}
+                                                  transition={{
+                                                       delay: 0.2,
+                                                       duration: 1,
+                                                  }}
+                                                  className="main-text-1"
+                                             >
                                                   GRAVITY
-                                             </span>
-                                             <span className="text-center fw-lighter main-text-2">
+                                             </motion.span>
+                                             <motion.span
+                                                  initial={{ opacity: 0 }}
+                                                  animate={{ opacity: 1 }}
+                                                  transition={{
+                                                       delay: 0.3,
+                                                       duration: 1,
+                                                  }}
+                                                  className="text-center fw-lighter main-text-2"
+                                             >
                                                   FILMS
-                                             </span>
-                                             <div className="text-center pb-5">
+                                             </motion.span>
+                                             <motion.div
+                                                  initial={{
+                                                       opacity: 0,
+                                                  }}
+                                                  animate={{ opacity: 1 }}
+                                                  transition={{
+                                                       delay: 0.2,
+                                                       duration: 1,
+                                                  }}
+                                                  className="text-center pb-5"
+                                             >
                                                   We are Creative Media & Brand
                                                   Transformation
                                                   <br />
@@ -101,7 +132,7 @@ export default function Home() {
                                                   Production
                                                   <br />
                                                   Creating ideas into reality
-                                             </div>
+                                             </motion.div>
                                         </div>
                                    </div>
                               </div>
