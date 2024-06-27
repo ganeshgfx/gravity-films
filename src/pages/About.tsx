@@ -21,17 +21,17 @@ import { Card } from "../components/Card";
 import Story from "../ui/Story";
 export default function About() {
      const GRADIENTS = [
-          "https://products.ls.graphics/mesh-gradients/images/03.-Snowy-Mint_1-p-130x130q80.jpeg",
-          "https://products.ls.graphics/mesh-gradients/images/04.-Hopbush_1-p-130x130q80.jpeg",
-          "https://products.ls.graphics/mesh-gradients/images/06.-Wisteria-p-130x130q80.jpeg",
-          "https://products.ls.graphics/mesh-gradients/images/09.-Light-Sky-Blue-p-130x130q80.jpeg",
-          "https://products.ls.graphics/mesh-gradients/images/12.-Tumbleweed-p-130x130q80.jpeg",
-          "https://products.ls.graphics/mesh-gradients/images/15.-Perfume_1-p-130x130q80.jpeg",
-          "https://products.ls.graphics/mesh-gradients/images/36.-Pale-Chestnut-p-130x130q80.jpeg",
-          "https://products.ls.graphics/mesh-gradients/images/09.-Light-Sky-Blue-p-130x130q80.jpeg",
-          "https://products.ls.graphics/mesh-gradients/images/12.-Tumbleweed-p-130x130q80.jpeg",
-          "https://products.ls.graphics/mesh-gradients/images/15.-Perfume_1-p-130x130q80.jpeg",
-          "https://products.ls.graphics/mesh-gradients/images/36.-Pale-Chestnut-p-130x130q80.jpeg",
+          "/public/members/bantai.jpg",
+          "/public/members/ganesh.jpg",
+          "/public/members/sarthak.jpg",
+          "/public/members/hetal.jpg",
+          "/public/members/jiten.jpg",
+          "/public/members/pravin.jpg",
+          "/public/members/rv.jpg",
+          "/public/members/shital.jpg",
+          "/public/members/sarthak_t.jpg",
+          "/public/members/sneha.jpg",
+          "/public/members/bantai.jpg",
      ];
      return (
           <Container maxWidth="xl">

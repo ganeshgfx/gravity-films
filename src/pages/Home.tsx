@@ -9,20 +9,12 @@ import React, { useRef } from "react";
 import { Sparkles } from "./Sparkle";
 import Background from "./Background";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
 import Gravity from "../3d/Gravity";
 import Scroll from "../ui/Scroll";
-import LogoSlider from "../ui/LogoSlider";
 import Logos from "../ui/Logos";
-import {
-     TypewriterEffect,
-     TypewriterEffectSmooth,
-} from "../ui/typewriter-effect";
 import { Container } from "@mui/joy";
-import { TextGenerateEffect } from "../ui/Text-generate-effect";
 import HeadText from "../ui/HeadText";
 import ShuffleHero from "../ui/ShuffleHero";
-import WorkScroll from "../ui/WorkScroll";
 
 export default function Home() {
      const ref = useRef(null);

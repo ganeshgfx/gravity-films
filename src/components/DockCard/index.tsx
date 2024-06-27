@@ -10,12 +10,14 @@ import { useWindowResize } from "../hooks/useWindowResize";
 
 import { useDock } from "../Dock/DockContext";
 import styles from "../../components/DockCard/styles.module.scss";
+import { Box } from "@mui/joy";
+import { motion } from "framer-motion";
 
 interface DockCardProps {
      children: React.ReactNode;
 }
 
-const INITIAL_WIDTH = 48;
+const INITIAL_WIDTH = 84;
 
 export const DockCard = ({ children }: DockCardProps) => {
      const cardRef = React.useRef<HTMLButtonElement>(null!);
@@ -86,7 +88,6 @@ export const DockCard = ({ children }: DockCardProps) => {
      const timesLooped = React.useRef(0);
      const timeoutRef = React.useRef<number>();
      const isAnimating = React.useRef(false);
-
      const handleClick = () => {
           if (!isAnimating.current) {
                isAnimating.current = true;
@@ -123,23 +124,46 @@ export const DockCard = ({ children }: DockCardProps) => {
      React.useEffect(() => () => clearTimeout(timeoutRef.current), []);
 
      return (
-          <div className={styles["dock-card-container"]}>
-               <animated.button
-                    ref={cardRef}
-                    className={styles["dock-card"]}
-                    onClick={handleClick}
-                    style={{
-                         width: size,
-                         height: size,
-                         y,
+          <motion.div
+               whileHover={{ scale: 1.1 }}
+               whileTap={{
+                    scale: 0.9,
+                    //blur
+                    // filter: "blur(10px)",
+               }}
+               initial={{ scale: 1 }}
+          >
+               <Box
+                    sx={{
+                         marginTop: "4rem",
+                         filter: "saturate(0%)contrast(1.2) brightness(1.1)",
+                         // saturation 100 on hover
+                         transition: "all 1s",
+                         "&:hover": {
+                              filter: "saturate(100%)contrast(1) brightness(1)",
+                         },
                     }}
                >
-                    {children}
-               </animated.button>
-               <animated.div
-                    className={styles["dock-dot"]}
-                    style={{ opacity }}
-               />
-          </div>
+                    <div className={styles["dock-card-container"]}>
+                         <motion.span>Name</motion.span>
+                         <animated.button
+                              ref={cardRef}
+                              className={styles["dock-card"]}
+                              // onClick={handleClick}
+                              style={{
+                                   width: size,
+                                   height: size,
+                                   y,
+                              }}
+                         >
+                              {children}
+                         </animated.button>
+                         <animated.div
+                              className={styles["dock-dot"]}
+                              style={{ opacity }}
+                         />
+                    </div>
+               </Box>
+          </motion.div>
      );
 };

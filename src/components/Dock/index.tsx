@@ -35,8 +35,12 @@ export const Dock = ({ children }: DockProps) => {
      });
 
      return (
-          <div>
-               <div className="hidden md:block">
+          <div
+               style={{
+                    marginTop: "4rem",
+               }}
+          >
+               <div className="hidden lg:block">
                     <DockContext.Provider
                          value={{ hovered, setIsZooming, width, zoomLevel }}
                     >
@@ -69,16 +73,17 @@ export const Dock = ({ children }: DockProps) => {
                          </animated.div>
                     </DockContext.Provider>
                </div>
-               <div className="block md:hidden">
+               <div className="block lg:hidden">
                     <div
                          style={{
                               display: "grid",
-                              gridTemplateColumns: "repeat(6, 0.1fr)",
-                              gridTemplateRows: "repeat(4,0.1fr)",
+                              gridTemplateColumns: "repeat(5, 0.1fr)",
+                              gridTemplateRows: "repeat(4,0fr)",
                               justifyContent: "center",
                               alignItems: "center",
                               gap: "1rem",
                          }}
+                         className="profile-grid"
                     >
                          {children}
                     </div>
