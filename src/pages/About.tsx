@@ -21,17 +21,16 @@ import { Card } from "../components/Card";
 import Story from "../ui/Story";
 export default function About() {
      const GRADIENTS = [
-          "/public/members/bantai.jpg",
-          "/public/members/ganesh.jpg",
-          "/public/members/sarthak.jpg",
-          "/public/members/hetal.jpg",
-          "/public/members/jiten.jpg",
-          "/public/members/pravin.jpg",
-          "/public/members/rv.jpg",
-          "/public/members/shital.jpg",
-          "/public/members/sarthak_t.jpg",
-          "/public/members/sneha.jpg",
-          "/public/members/bantai.jpg",
+          { src: "/members/bantai.jpg", name: "Vishal Bhoya" },
+          { src: "/members/hetal.jpg", name: "Hetal Patel" },
+          { name: "Sheetal Mishra", src: "/members/shital.jpg" },
+          { name: "Jiten", src: "/members/jiten.jpg" },
+          { name: "Ganesh Ghutiya", src: "/members/ganesh.jpg" },
+          { name: "Ravi Kumar", src: "/members/rv.jpg" },
+          { name: "Sarthak Patel", src: "/members/sarthak.jpg" },
+          { name: "Pravin Gayakwad", src: "/members/pravin.jpg" },
+          { name: "Sarthak Thakur", src: "/members/sarthak_t.jpg" },
+          { name: "Sneha Maurya", src: "/members/sneha.jpg" },
      ];
      return (
           <Container maxWidth="xl">
@@ -58,7 +57,7 @@ export default function About() {
                <div className="flex mt-5 items-center justify-center mb-10 w-full">
                     <Dock>
                          {GRADIENTS.map((src, index) => (
-                              <DockCard key={src}>
+                              <DockCard key={src.name}>
                                    <Card src={src} />
                               </DockCard>
                          ))}

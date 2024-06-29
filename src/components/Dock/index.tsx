@@ -77,7 +77,7 @@ export const Dock = ({ children }: DockProps) => {
                     <div
                          style={{
                               display: "grid",
-                              gridTemplateColumns: "repeat(5, 0.1fr)",
+                              gridTemplateColumns: "repeat(4, 0.1fr)",
                               gridTemplateRows: "repeat(4,0fr)",
                               justifyContent: "center",
                               alignItems: "center",

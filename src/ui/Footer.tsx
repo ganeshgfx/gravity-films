@@ -1,5 +1,5 @@
 import { Instagram, MailOutline, WhatsApp } from "@mui/icons-material";
-import { Chip, Container, Divider, Stack } from "@mui/joy";
+import { Box, Chip, Container, Divider, Stack } from "@mui/joy";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { HiPhoneArrowUpRight } from "react-icons/hi2";
 import React from "react";
@@ -22,14 +22,48 @@ export default function Footer() {
                     className="wave bg2"
                />
                <div className="bg2">
-                    <Container maxWidth="lg">
+                    <Container
+                         maxWidth="xl"
+                         sx={{
+                              opacity: 0.5,
+                         }}
+                    >
                          <Divider
                               sx={{
                                    my: 2,
                               }}
                          />
-                         <Stack>
-                              <Stack gap={1}>
+                         <Stack
+                              direction="row"
+                              justifyContent="space-between"
+                              alignItems="center"
+                              sx={{
+                                   mx: 1,
+                              }}
+                         >
+                              <Stack
+                                   gap={1}
+                                   sx={{
+                                        flexGrow: 1,
+                                   }}
+                              >
+                                   <a
+                                        href="https://wa.me/919033535655"
+                                        target="_blank"
+                                   >
+                                        <Chip
+                                             startDecorator={
+                                                  <WhatsApp
+                                                       style={{
+                                                            color: "white",
+                                                       }}
+                                                  />
+                                             }
+                                             variant="soft"
+                                        >
+                                             Gravity Films
+                                        </Chip>
+                                   </a>
                                    <a
                                         href="https://instagram.com/gravity.films_"
                                         target="_blank"
@@ -48,20 +82,19 @@ export default function Footer() {
                                         </Chip>
                                    </a>
                                    <a
-                                        href="https://wa.me/919033535655"
+                                        style={{
+                                             marginLeft: "3px",
+                                        }}
+                                        href="tel:+919033535655"
                                         target="_blank"
                                    >
                                         <Chip
                                              startDecorator={
-                                                  <WhatsApp
-                                                       style={{
-                                                            color: "white",
-                                                       }}
-                                                  />
+                                                  <HiPhoneArrowUpRight />
                                              }
                                              variant="soft"
                                         >
-                                             Gravity Films
+                                             +91 903 3535655
                                         </Chip>
                                    </a>
                                    <a
@@ -81,6 +114,7 @@ export default function Footer() {
                                              info@gravityfilms.space
                                         </Chip>
                                    </a>
+
                                    <a
                                         href="https://www.linkedin.com/company/gravityfilms"
                                         target="_blank"
@@ -92,29 +126,39 @@ export default function Footer() {
                                              linkedin.com/company/gravityfilms
                                         </Chip>
                                    </a>
-                                   <a href="tel:+919033535655" target="_blank">
-                                        <Chip
-                                             startDecorator={
-                                                  <HiPhoneArrowUpRight />
-                                             }
-                                             variant="soft"
-                                        >
-                                             +91 903 3535655
-                                        </Chip>
-                                   </a>
+                              </Stack>
+                              <Stack sx={{}}>
+                                   <div
+                                        style={{
+                                             flexGrow: 1,
+                                             display: "flex",
+                                             justifyContent: "flex-end",
+                                        }}
+                                   >
+                                        <img
+                                             src="/logo-footer.svg"
+                                             style={{
+                                                  width: "50%",
+                                                  height: "50%",
+                                                  objectFit: "contain",
+                                             }}
+                                             alt="logo"
+                                        />
+                                   </div>
                               </Stack>
                          </Stack>
                          <Divider
                               sx={{
-                                   my: 2,
+                                   my: 0.5,
+                                   visibility: "hidden",
                               }}
                          />
                          <Stack
-                              direction="row"
+                              direction="row-reverse"
                               justifyContent="space-between"
                               alignItems="center"
                               sx={{
-                                   mx: 1,
+                                   mx: 2,
                               }}
                          >
                               <div>
@@ -127,17 +171,22 @@ export default function Footer() {
                                         Gravity Films™
                                    </p>
                               </div>
-                              <div>
-                                   <p
-                                        style={{
-                                             color: "white",
-                                             fontSize: "1rem",
-                                        }}
-                                   >
-                                        All Rights Reserved
-                                   </p>
-                              </div>
                          </Stack>
+
+                         <Box
+                              sx={{
+                                   mx: 2.5,
+                              }}
+                         >
+                              <p
+                                   style={{
+                                        color: "white",
+                                        fontSize: "1rem",
+                                   }}
+                              >
+                                   All Rights Reserved
+                              </p>
+                         </Box>
                          <Divider
                               sx={{
                                    my: 2,

@@ -25,6 +25,7 @@ export const DockCard = ({ children }: DockCardProps) => {
       * This doesn't need to be real time, think of it as a static
       * value of where the card should go to at the end.
       */
+
      const [elCenterX, setElCenterX] = React.useState<number>(0);
 
      const size = useSpringValue(INITIAL_WIDTH, {
@@ -43,6 +44,10 @@ export const DockCard = ({ children }: DockCardProps) => {
      });
 
      const dock = useDock();
+
+     // console.log(children.props.src.name);
+
+     const name = children.props.src.name;
 
      /**
       * This is just an abstraction around a `useSpring` hook, if you wanted you could do this
@@ -154,9 +159,20 @@ export const DockCard = ({ children }: DockCardProps) => {
                               transition={{ delay: 1 }}
                               style={{
                                    display: hovered ? "block" : "none",
+                                   position: "absolute",
+                                   top: -45,
+                                   zIndex: 9999,
+                                   backgroundColor: "rgba(0,0,0,0.8)",
+                                   paddingTop: "8px",
+                                   paddingBottom: "8px",
+                                   paddingLeft: "16px",
+                                   paddingRight: "16px",
+                                   borderRadius: "5rem",
+                                   textAlign: "center",
+                                   textWrap: "nowrap",
                               }}
                          >
-                              Name
+                              {name}
                          </motion.span>
                          <animated.button
                               ref={cardRef}

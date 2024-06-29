@@ -25,6 +25,7 @@ function Nav() {
           <Container
                sx={{
                     pt: 4,
+                    opacity: 0.75,
                }}
                maxWidth="xl"
           >
