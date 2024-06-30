@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import React from "react";
 import { KeyboardArrowRight } from "@mui/icons-material";
 import Title from "./Title";
-import { servicesData as services } from "../data/ServicesData";
+import { servicesDatas as services } from "../data/ServicesData";
 const ShuffleHero = () => {
      return (
           <Container maxWidth="xl">

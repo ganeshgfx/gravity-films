@@ -36,11 +36,14 @@ export const Dock = ({ children }: DockProps) => {
 
      return (
           <div
-               style={{
-                    marginTop: "4rem",
-               }}
+               style={
+                    {
+                         // marginTop: "4rem",
+                    }
+               }
+               className="mt-10 m:mt-0"
           >
-               <div className="hidden lg:block">
+               <div className="hidden xl:block">
                     <DockContext.Provider
                          value={{ hovered, setIsZooming, width, zoomLevel }}
                     >
@@ -73,7 +76,7 @@ export const Dock = ({ children }: DockProps) => {
                          </animated.div>
                     </DockContext.Provider>
                </div>
-               <div className="block lg:hidden">
+               <div className="block xl:hidden">
                     <div
                          style={{
                               display: "grid",

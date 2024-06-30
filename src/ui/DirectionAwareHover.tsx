@@ -8,9 +8,11 @@ import { Card } from "@mui/joy";
 export const DirectionAwareHover = ({
      imageUrl,
      children,
+     isImage,
 }: {
      imageUrl: string;
      children: React.ReactNode | string;
+     isImage: boolean;
 }) => {
      const ref = useRef<HTMLDivElement>(null);
 
@@ -24,7 +26,7 @@ export const DirectionAwareHover = ({
           if (!ref.current) return;
 
           const direction = getDirection(event, ref.current);
-          console.log("direction", direction);
+          //console.log("direction", direction);
           switch (direction) {
                case 0:
                     setDirection("top");
@@ -87,15 +89,21 @@ export const DirectionAwareHover = ({
                                         ease: "easeOut",
                                    }}
                               >
-                                   <img
-                                        alt="image"
-                                        className={cn(
-                                             "h-full w-full object-cover scale-[1.15]",
-                                        )}
-                                        width="1000"
-                                        height="1000"
-                                        src={imageUrl}
-                                   />
+                                   {isImage ? (
+                                        <motion.img
+                                             src={imageUrl}
+                                             alt="image"
+                                             className="w-full h-full object-cover"
+                                        />
+                                   ) : (
+                                        <video
+                                             className="w-full h-full object-cover"
+                                             autoPlay
+                                             loop
+                                             muted
+                                             src={imageUrl}
+                                        ></video>
+                                   )}
                               </motion.div>
                               <motion.div
                                    variants={textVariants}

@@ -51,7 +51,7 @@ export const SERVICES_IDS = {
      brand_building: BRAND_BUILDING,
      visual_art: VISUAL_ART,
 };
-export const servicesData = [
+export const servicesDatas = [
      {
           id: FILM_MAKING,
           title: "Film Making",
@@ -595,31 +595,202 @@ servicesToBrands.set(MUSIC_SOUNDS, [LOGOS_IDS.ARV_REALTY]);
 
 export const portfolioData = new Map();
 portfolioData.set(LOGOS_IDS.HERMOD, [
-     "/brands/hermod/a1.jpg",
-     "/brands/hermod/a2.jpg",
-     "/brands/hermod/a3.jpg",
-     "/brands/hermod/a4.jpg",
-     "/brands/hermod/a5.jpg",
-     "/brands/hermod/b1.jpg",
-     "/brands/hermod/b2.jpg",
-     "/brands/hermod/b3.jpg",
-     "/brands/hermod/b4.jpg",
-     "/brands/hermod/b5.jpg",
-     "/brands/hermod/b6.jpg",
-     "/brands/hermod/b7.jpg",
-     "/brands/hermod/b8.jpg",
-     "/brands/hermod/b9.jpg",
-     "/brands/hermod/b10.jpg",
-     "/brands/hermod/b11.jpg",
-     "/brands/hermod/b12.jpg",
-     "/brands/hermod/b13.jpg",
-     "/brands/hermod/c1.jpg",
-     "/brands/hermod/c2.jpg",
-     "/brands/hermod/c3.jpg",
-     "/brands/hermod/c4.jpg",
-     "/brands/hermod/c5.jpg",
-     "/brands/hermod/c6.jpg",
-     "/brands/hermod/c7.jpg",
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/a1.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/a2.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/a3.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/a4.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/a5.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/b1.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/b2.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/b3.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/b4.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/b5.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/b6.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/b7.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/b8.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/b9.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/b10.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/b11.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/b12.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/b13.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c1.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c1.png",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c2.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c2.png",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c3.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c3.png",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c4.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c4.png",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c5.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c5.png",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c6.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c7.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c7.png",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c8.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c8.png",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c9.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c9.png",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c10.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c10.png",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c11.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c12.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c13.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c14.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c15.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c16.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c17.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c18.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c19.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c20.jpg",
+     },
+     {
+          type: PHOTOGRAPHY,
+          data: "/brands/hermod/c21.jpg",
+     },
+     {
+          type: CINEMATOGRAPHY,
+          data: "/brands/hermod/d1.mp4",
+     },
 ]);
 portfolioData.set(LOGOS_IDS.NUTS_N_JARS, []);
 portfolioData.set(LOGOS_IDS.HINDUSTAN_UNILEVER, []);

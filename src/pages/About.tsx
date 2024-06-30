@@ -20,18 +20,22 @@ import { DockCard } from "../components/DockCard";
 import { Card } from "../components/Card";
 import Story from "../ui/Story";
 export default function About() {
-     const GRADIENTS = [
-          { src: "/members/bantai.jpg", name: "Vishal Bhoya" },
-          { src: "/members/hetal.jpg", name: "Hetal Patel" },
+     var GRADIENTS = [
+          { name: "Vishal Bhoya", src: "/members/bantai.jpg" },
+          { name: "Hetal Patel", src: "/members/hetal.jpg" },
           { name: "Sheetal Mishra", src: "/members/shital.jpg" },
-          { name: "Jiten", src: "/members/jiten.jpg" },
+          { name: "Jiten Patel", src: "/members/jiten.jpg" },
           { name: "Ganesh Ghutiya", src: "/members/ganesh.jpg" },
           { name: "Ravi Kumar", src: "/members/rv.jpg" },
           { name: "Sarthak Patel", src: "/members/sarthak.jpg" },
           { name: "Pravin Gayakwad", src: "/members/pravin.jpg" },
           { name: "Sarthak Thakur", src: "/members/sarthak_t.jpg" },
           { name: "Sneha Maurya", src: "/members/sneha.jpg" },
+          { name: "Akash Patel", src: "/members/akash.jpg" },
+          { name: "Rutvik Paul", src: "/members/rutvik.jpg" },
      ];
+     //suffle the array
+     GRADIENTS = GRADIENTS.sort(() => Math.random() - 0.5);
      return (
           <Container maxWidth="xl">
                <div className="ms-2 mb-5 mt-5">
