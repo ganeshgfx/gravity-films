@@ -8,14 +8,23 @@ import { servicesDatas as services } from "../data/ServicesData";
 const ShuffleHero = () => {
      return (
           <Container maxWidth="xl">
-               <section className="w-full py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8  mx-auto">
+               <div
+                    style={{
+                         width: "100%",
+                         display: "flex",
+                         justifyContent: "center",
+                         paddingTop: 35,
+                    }}
+               >
+                    <Title title="Our Services" />
+               </div>
+               <section className="w-full pt-9 pb-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8  mx-auto">
                     <div>
-                         <Title title="Our Services" />
                          <Grid
                               my={1}
                               container
                               columns={{ xs: 8, sm: 8, md: 16 }}
-                              sx={{ flexGrow: 1 }}
+                              sx={{ flexGrow: 1, mt: 4 }}
                          >
                               {services.map((service, index) => (
                                    <Grid xs={8} key={index}>

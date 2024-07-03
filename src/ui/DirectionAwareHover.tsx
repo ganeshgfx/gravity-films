@@ -98,7 +98,6 @@ export const DirectionAwareHover = ({
                                    ) : (
                                         <video
                                              className="w-full h-full object-cover"
-                                             autoPlay
                                              loop
                                              muted
                                              src={imageUrl}

@@ -21,20 +21,22 @@ export default function Scroll() {
                >
                     <div
                          style={{
-                              display: "flex",
-                              justifyContent: "center",
-                              alignItems: "center",
-                         }}
-                    >
-                         <Title title="Our Work" />
-                    </div>
-                    <div
-                         style={{
                               width: "100%",
                               height: "100px",
                          }}
                          className="wave bg2"
                     />
+                    <div
+                         style={{
+                              display: "flex",
+                              justifyContent: "center",
+                              alignItems: "center",
+                              backgroundColor: "#262626",
+                              paddingBottom: "60px",
+                         }}
+                    >
+                         <Title title="Our Work" />
+                    </div>
                     <div className="sticky top-0 flex h-screen items-center overflow-hidden justify-center bg2">
                          <motion.div
                               style={{
@@ -56,17 +58,6 @@ export default function Scroll() {
                                    }}
                                    className="wave bg1"
                               />
-                              <div
-                                   style={{
-                                        width: "100%",
-
-                                        display: "flex",
-                                        justifyContent: "center",
-                                   }}
-                                   className="bg1"
-                              >
-                                   <Title title="Our Clients" />
-                              </div>
                          </motion.div>
 
                          <div>

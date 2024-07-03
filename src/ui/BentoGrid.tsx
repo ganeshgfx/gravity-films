@@ -71,7 +71,6 @@ export function BentoGridUi() {
                                         }}
                                    >
                                         {manipulateData(data.id)}
-
                                         {/* {getBrandData(data.id)} */}
                                         {/* {portfolioData
                                              .get(data.id)
@@ -91,9 +90,6 @@ export function BentoGridUi() {
           </div>
      );
 }
-const Skeleton = () => (
-     <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-);
 
 function manipulateData(id) {
      try {
@@ -107,8 +103,8 @@ function manipulateData(id) {
 
           return works.map((item, i) => {
                const fileType = checkFileTypeImageOrVideoFromUrlEnd(item.data);
-
-               if (item.type == id) {
+               //console.log(item.type.includes(id));
+               if (item.type.includes(id)) {
                     return (
                          <DirectionAwareHover
                               key={i}

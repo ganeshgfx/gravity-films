@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Container } from "@mui/joy";
 
 export default function Logos() {
-     const logos = [
+     let logos = [
           "HRMD.png",
           "ig.png",
           "cci.png",
@@ -17,7 +17,16 @@ export default function Logos() {
           "nift.png",
           "arv.png",
           "dri.png",
+          "vegan.webp",
+          "force.png",
+          "visda.png",
+          "flame.png",
+          "jeevitnadi.png",
+          "puneriverrevival.png",
+          "bamboo.png",
      ];
+     //shuffle the logos
+     logos = logos.sort(() => Math.random() - 0.5);
      return (
           <Container
                maxWidth="lg"

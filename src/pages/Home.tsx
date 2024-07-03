@@ -12,9 +12,10 @@ import { Canvas } from "@react-three/fiber";
 import Gravity from "../3d/Gravity";
 import Scroll from "../ui/Scroll";
 import Logos from "../ui/Logos";
-import { Container } from "@mui/joy";
+import { Container, Divider } from "@mui/joy";
 import HeadText from "../ui/HeadText";
 import ShuffleHero from "../ui/ShuffleHero";
+import Title from "../ui/Title";
 
 export default function Home() {
      const ref = useRef(null);
@@ -157,10 +158,29 @@ export default function Home() {
                          }}
                     />
                </div>
+               <Divider />
+               <div
+                    style={{
+                         width: "100%",
+                         height: "100px",
+                         display: "flex",
+                         paddingTop: "30px",
+                         justifyContent: "center",
+                    }}
+                    className="bg1"
+               >
+                    <Title title="Our Clients" />
+               </div>
+               <Logos />
+               <Divider
+                    sx={{
+                         marginTop: "50px",
+                    }}
+               />
                <ShuffleHero />
                <Scroll />
                {/* <WorkScroll /> */}
-               <Logos />
+
                {/* <LogoSlider /> */}
           </div>
      );
