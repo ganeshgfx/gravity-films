@@ -71,7 +71,7 @@ function Nav() {
 
                     <Stack direction="row" spacing={1}>
                          <a
-                              href="https://instagram.com/gravity.films_"
+                              href="https://instagram.com/gravityfilmsin"
                               target="_blank"
                          >
                               <IconButton

@@ -65,7 +65,7 @@ export default function Footer() {
                                         </Chip>
                                    </a>
                                    <a
-                                        href="https://instagram.com/gravity.films_"
+                                        href="https://instagram.com/gravityfilmsin"
                                         target="_blank"
                                    >
                                         <Chip
@@ -78,7 +78,7 @@ export default function Footer() {
                                              }
                                              variant="soft"
                                         >
-                                             @gravity.films_
+                                             @gravityfilmsin
                                         </Chip>
                                    </a>
                                    <a
