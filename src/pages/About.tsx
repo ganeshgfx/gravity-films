@@ -19,17 +19,18 @@ import { Dock } from "../components/Dock";
 import { DockCard } from "../components/DockCard";
 import { Card } from "../components/Card";
 import Story from "../ui/Story";
+import Founders from "../ui/Founders";
 export default function About() {
      var GRADIENTS = [
           { name: "Vishal Bhoya", src: "/members/bantai.jpg" },
           { name: "Hetal Patel", src: "/members/hetal.jpg" },
-          { name: "Sheetal Mishra", src: "/members/shital.jpg" },
+          // { name: "Sheetal Mishra", src: "/members/shital.jpg" },
           { name: "Jiten Patel", src: "/members/jiten.jpg" },
-          { name: "Ganesh Ghutiya", src: "/members/ganesh.jpg" },
-          { name: "Ravi Kumar", src: "/members/rv.jpg" },
-          { name: "Sarthak Patel", src: "/members/sarthak.jpg" },
+          { name: "Nelson Shinde", src: "/members/nelson.png" },
+          // { name: "Ravi Kumar", src: "/members/rv.jpg" },
+          // { name: "Sarthak Patel", src: "/members/sarthak.jpg" },
           { name: "Pravin Gayakwad", src: "/members/pravin.jpg" },
-          { name: "Sarthak Thakur", src: "/members/sarthak_t.jpg" },
+          // { name: "Sarthak Thakur", src: "/members/sarthak_t.jpg" },
           { name: "Sneha Maurya", src: "/members/sneha.jpg" },
           { name: "Akash Patel", src: "/members/akash.jpg" },
           { name: "Rutvik Paul", src: "/members/rutvik.jpg" },
@@ -55,9 +56,11 @@ export default function About() {
                <div className="ms-2 mt-9 mb-5">
                     <Story />
                </div>
-               <div className="ms-2 mt-19 mb-5">
+
+               <div className="ms-2 mt-19 mb-10">
                     <Title title="Meet Our Team Members" />
                </div>
+               <Founders />
                <div className="flex mt-5 items-center justify-center mb-10 w-full">
                     <Dock>
                          {GRADIENTS.map((src, index) => (

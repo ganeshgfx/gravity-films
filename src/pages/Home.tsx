@@ -169,7 +169,7 @@ export default function Home() {
                     }}
                     className="bg1"
                >
-                    <Title title="Our Clients" />
+                    <Title title="Our Valued Connections" />
                </div>
                <Logos />
                <Divider

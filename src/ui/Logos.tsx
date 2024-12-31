@@ -25,6 +25,7 @@ export default function Logos() {
           "puneriverrevival.png",
           "bamboo.png",
           "vijay.png",
+          "icon.png",
      ];
      //shuffle the logos
      logos = logos.sort(() => Math.random() - 0.5);
