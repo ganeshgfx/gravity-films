@@ -26,6 +26,14 @@ export default function Logos() {
           "bamboo.png",
           "vijay.png",
           "icon.png",
+          "2dp.png",
+          "akshar.png",
+          "devkiba.png",
+          "haveli.png",
+          "mahindra.png",
+          "miss.png",
+          "samadhan.png",
+          "sc_dnhdd.png",
      ];
      //shuffle the logos
      logos = logos.sort(() => Math.random() - 0.5);
