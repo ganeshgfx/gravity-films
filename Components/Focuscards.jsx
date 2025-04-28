@@ -4,15 +4,46 @@ import { FocusCards } from "@/Components/ui/focus-cards";
 export function Focuscards() {
   const cards = [
     {
-      title: "Coffee Cup India",
+      title: "Akshar Academy",
       images: [
-        "/WorkCards/cci.png",
-        "/WorkCards/cci.png",
-        "/WorkCards/cci.png",
+        "/WorkCards/akshar1.jpeg",
+        "/WorkCards/akshar2.jpeg",
+        "/WorkCards/akshar3.jpeg",
       ],
     },
     {
-      title: "Icon Bags",
+      title: "HAZELCORP",
+      images: [
+        "/WorkCards/hazel0.png",
+        "/WorkCards/hazel1.webp",
+        "/WorkCards/hazel2.webp",
+        "/WorkCards/hazel3.webp",
+        "/WorkCards/hazel4.webp",
+        "/WorkCards/hazel5.jpg",
+      ],
+    },
+    {
+      title: "HERMOD",
+      images: [
+        "/WorkCards/hermod1.png",
+        "/WorkCards/hermod2.png",
+        "/WorkCards/hermod3.jpg",
+        "/WorkCards/hermod4.jpg",
+        "/WorkCards/hermod5.jpg",
+      ],
+    },
+    {
+      title: "Hindustan Unilever",
+      images: [
+        "/WorkCards/hul1.jpg",
+        "/WorkCards/hul2.jpg",
+        "/WorkCards/hul3.jpg",
+        "/WorkCards/hul4.png",
+        "/WorkCards/hul4.JPG",
+      ],
+    },
+    {
+      title: "ICON BAGS",
       images: [
         "/WorkCards/icon1.jpg",
         "/WorkCards/icon2.jpg",
@@ -21,35 +52,20 @@ export function Focuscards() {
       ],
     },
     {
-      title: "HRMD",
-      images: [
-        "/WorkCards/hermod1.png",
-        "/WorkCards/hermod2.png",
-        "/WorkCards/hermod3.png",
-        "/WorkCards/hermod4.png",
-      ],
-    },
-    {
-      title: "Hindustan Unilever",
-      images: [
-        "/WorkCards/hul.jpg",
-        "/WorkCards/hul1.jpg",
-        "/WorkCards/hul2.jpg",
-      ],
-    },
-    {
-      title: "HAZELCOP",
-      images: [
-        "/WorkCards/hazel0.png",
-        "/WorkCards/hazel4.webp",
-        "/WorkCards/hazel2.webp",
-        "/WorkCards/hazel3.webp",
-        "/WorkCards/hazel1.webp",
-      ],
-    },
-    {
       title: "Indie Grow",
       images: ["/WorkCards/ig.png", "/WorkCards/ig.png"],
+    },
+    {
+      title: "2dP",
+      images: [
+        "/WorkCards/2dp.jpg",
+        "/WorkCards/2dp2.jpg",
+        "/WorkCards/2dp3.jpg",
+      ],
+    },
+    {
+      title: "Miss India",
+      images: ["/WorkCards/miss2.jpg", "/WorkCards/miss3.jpg"],
     },
     {
       title: "MYFITNESS",
@@ -65,11 +81,12 @@ export function Focuscards() {
     },
     {
       title: "S Creation Films",
-      images: ["/WorkCards/sf.png", "/WorkCards/sf.png"],
-    },
-    {
-      title: "Tridrashya",
-      images: ["/WorkCards/trid.png", "/WorkCards/trid.png"],
+      images: [
+        "/WorkCards/s.png",
+        "/WorkCards/s1.jpg",
+        "/WorkCards/s2.jpg",
+        "/WorkCards/s3.jpg",
+      ],
     },
   ];
 

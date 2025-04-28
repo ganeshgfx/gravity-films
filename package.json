@@ -5,12 +5,13 @@
      "homepage": "https://gravityfilms.space",
      "scripts": {
           "dev": "next dev --turbopack",
-          "build": "next build && next export",
+          "build": "next build",
           "start": "next start",
           "lint": "next lint",
-          "export": "next export",
           "deploy": "type nul > dist/.nojekyll && gh-pages -d dist --dotfiles",
-          "gh-pages": "gh-pages -d dist"
+          "gh-pages": "gh-pages -d dist",
+          "push": "npm run build && npm run gh-pages"
+
      },
      "dependencies": {
           "@emotion/react": "^11.14.0",

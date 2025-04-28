@@ -45,19 +45,20 @@ export function VideosForPortfolio() {
 
   const videos = [
     {
-      src: "./video/v12.mp4", // Update paths for GitHub Pages
-      title: "Explore Nature",
-      desc: "Discover the beauty of the natural world",
-      poster: "./thumbnails/nature-poster.jpg",
+      src: "./video/4.mp4", // Update paths for GitHub Pages
+      title: "3D Model",
+      desc: "Discover the Hindistan Unilever 3d View",
+      poster: "./after.jpg",
     },
-    { src: "./video/v2.mp4", title: "Tech Innovations" },
-    { src: "./video/v3.mp4", title: "Travel Adventures" },
-    { src: "./video/v1.mp4", title: "Culinary Delights" },
-    { src: "./video/v5.mp4", title: "Artistic Expressions" },
-    { src: "./video/v4.mp4", title: "Swimming" },
-    { src: "./video/v6.mp4", title: "Chess" },
-    { src: "./video/v7.mp4", title: "Football" },
-    { src: "./video/v8.mp4", title: "Cricket" },
+    { src: "./video/2.mp4", title: "HRM" },
+    { src: "./video/3.mp4", title: "Product Shoot" },
+    { src: "./video/1.mp4", title: "Hazelcorp" },
+    { src: "./video/5.mp4", title: "Hindustan Unilever" },
+    { src: "./video/4.mp4", title: "3D Work" },
+    { src: "./video/6.mp4", title: "Icon Bags" },
+    { src: "./video/7.mp4", title: "Miss India" },
+    { src: "./video/8.mp4", title: "Nuts&Jars" },
+    { src: "./video/9.mp4", title: "SCreation" },
   ];
 
   return (
@@ -95,6 +96,7 @@ export function VideosForPortfolio() {
                 style={{
                   filter: "none",
                   willChange: "contents",
+                  maxHeight: "400px",
                   backfaceVisibility: "hidden",
                   transform: "translateZ(0)",
                   WebkitTransform: "translateZ(0)",

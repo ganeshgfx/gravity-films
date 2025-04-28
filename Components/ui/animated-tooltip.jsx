@@ -57,13 +57,10 @@ export const AnimatedTooltip = ({ items }) => {
                   rotate: rotate,
                   whiteSpace: "nowrap",
                 }}
-                className="absolute -top-64 -left-1/2 translate-x-1/2 flex text-xs flex-col items-center justify-center rounded-lg bg-black z-50 shadow-xl p-6"
+                className="absolute -top-40 -left-1/2 translate-x-1/2 flex text-xs flex-col items-center justify-center rounded-lg bg-black z-50 shadow-xl p-6"
               >
                 <div className="font-bold text-white relative z-30 text-base">
                   {item.name}
-                </div>
-                <div className="text-white text-xs mb-3">
-                  {item.designation}
                 </div>
                 <Image
                   src={item.image2}
@@ -79,7 +76,7 @@ export const AnimatedTooltip = ({ items }) => {
             initial={{ scale: 1 }}
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 260, damping: 10 }}
-            className="h-12 w-12 rounded-full lg:w-16"
+            className="h-16 w-16 rounded-full lg:w-16"
           >
             <Image
               onMouseMove={handleMouseMove}

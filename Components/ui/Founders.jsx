@@ -7,24 +7,27 @@ export default function Founders() {
   const founders = [
     {
       name: "Ravi Kumar",
-      src: "/Team/dogs/ganesh.jpg",
-      hoverSrc:
-        "https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/Team/dogs/RV.jpeg",
+      hoverSrc: "/Team/People/rv.jpg",
       role: "Founder & Director of Operations",
     },
     {
       name: "Sarthak Patel",
       src: "/Team/dogs/sarthak.jpg",
-      hoverSrc:
-        "https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      hoverSrc: "/Team/People/sarthak.jpg",
       role: "Creative Director",
     },
     {
       name: "Ganesh Ghutiya",
       src: "/Team/dogs/ganesh.jpg",
-      hoverSrc:
-        "https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      hoverSrc: "/Team/People/ganesh.jpg",
       role: "Technology Lead",
+    },
+    {
+      name: "Akash Patel",
+      src: "/Team/dogs/sky.jpg",
+      hoverSrc: "/Team/People/akash.jpg",
+      role: "Data Engineer",
     },
   ];
 

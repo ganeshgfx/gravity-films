@@ -17,12 +17,12 @@ const page = () => {
           CINEMATIC EXPERIENCE
         </h2>
         <video
-          src="./video/cinematic.mp4"
+          src="./video/2.mp4"
           autoPlay
           loop
           muted
           playsInline
-          poster="./thumbnails/cinematic-poster.jpg"
+          poster=".\before.jpg"
           className="rounded-lg border border-gray-300 shadow-lg lg:w-full lg:h-[75vh] object-cover"
         />
       </div>
@@ -33,13 +33,13 @@ const page = () => {
         Experience the magic of editing with our advanced tools and techniques.
         Compare the before and after images to see the transformation.
       </p>
-      <div className="w-full h-[45vh] px-4 flex items-center justify-center [perspective:800px] [transform-style:preserve-3d] lg:h-[60vh]">
+      <div className="w-full aspect-[16/9] px-4 flex items-center justify-center [perspective:800px] [transform-style:preserve-3d]">
         <Compare
-          firstImage="./PralexImage/img1.jpg"
-          secondImage="./PralexImage/img2.jpg"
-          firstImageClassName="object-cover object-left-top w-full "
-          secondImageClassname="object-cover object-left-top w-full"
-          className="w-full h-full rounded-[22px] md:rounded-lg lg:"
+          firstImage="./before.jpg"
+          secondImage="./after.jpg"
+          firstImageClassName="object-cover w-full h-full"
+          secondImageClassname="object-cover w-full h-full"
+          className="w-full h-full rounded-[22px] md:rounded-lg"
           slideMode="hover"
           autoplay={true}
         />

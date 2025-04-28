@@ -6,20 +6,21 @@ import { ThreeDCard } from "@/Components/ui/ThreeDCard";
 
 export function Paraleximages() {
   const images = [
-    "/Gallery/img1.jpg", // Update paths for GitHub Pages
-    "/Gallery/img2.jpg",
-    "./Gallery/img2.jpg",
-    "./Gallery/img2.jpg",
-    "./Gallery/img2.jpg",
-    "./Gallery/img3.jpg",
-    "./Gallery/img4.jpg",
-    "./Gallery/img5.jpg",
-    "./Gallery/img6.jpg",
-    "./Gallery/img7.jpg",
-    "./Gallery/img8.jpg",
-    "./Gallery/img9.jpg",
-    "./Gallery/img10.jpg",
-    // "./Gallery/img11.jpg",
+    "./Gallery/1.png",
+    "./Gallery/2.webp",
+    "./Gallery/3.jpeg",
+    "./Gallery/4.webp",
+    "./Gallery/5.jpg",
+    "./Gallery/6.jpg",
+    "./Gallery/7.jpg",
+    "./Gallery/8.jpg",
+    "./Gallery/9.png",
+    "./Gallery/10.jpg",
+    "./Gallery/11.jpg",
+    "./Gallery/12.jpg",
+    "./Gallery/13.jpg",
+    "./Gallery/14.jpg",
+    "./Gallery/15.jpg",
   ].map((path) => (path.startsWith("/") ? "." + path : path));
 
   const [hoveredImage, setHoveredImage] = useState(null);
@@ -84,11 +85,15 @@ export function Paraleximages() {
                 alt={`Gallery image ${index + 1}`}
                 width={800}
                 height={600}
-                priority={index < 2} // Prioritize loading first 2 images
+                priority={index < 2}
                 loading={index < 2 ? "eager" : "lazy"}
                 onError={handleImageError}
-                className="transition-all duration-300 ease-in-out rounded-lg border-2 border-gray-200 shadow-lg hover:shadow-xl grayscale hover:grayscale-0"
+                className="transition-all duration-300 ease-in-out rounded-lg w-full h-auto object-cover shadow-lg hover:shadow-xl grayscale hover:grayscale-0 hover:scale-[1.02]"
                 onLoad={() => handleImageLoad(index)}
+                style={{
+                  border: "2px solid transparent",
+                  boxSizing: "border-box",
+                }}
               />
             </div>
           ))}
@@ -98,17 +103,33 @@ export function Paraleximages() {
       {/* Only show ThreeDCard on non-mobile devices */}
       {!isMobile && hoveredImage && (
         <div
-          className="fixed z-50 scale-105 transition-all duration-500 ease-out transform-gpu"
+          className="fixed z-50 transition-all duration-300 ease-out transform-gpu"
           style={{
             left: `${hoveredPosition.x}px`,
             top: `${hoveredPosition.y}px`,
             opacity: hoveredImage ? 1 : 0,
-            transform: `translateX(-50%) translateY(0)`, // Center the modal horizontally
+            transform: `translate(-50%, -50%)`,
+            width: "400px",
+            height: "300px",
+            background: "transparent",
           }}
           onMouseEnter={() => setHoveredImage(hoveredImage)}
           onMouseLeave={() => setHoveredImage(null)}
         >
-          <ThreeDCard imageSrc={hoveredImage} width={800} height={600} />
+          <div className="w-full h-full">
+            <ThreeDCard
+              imageSrc={hoveredImage}
+              width={400}
+              height={300}
+              style={{
+                width: "100%",
+                height: "100%",
+                overflow: "hidden",
+                borderRadius: "8px",
+                background: "none",
+              }}
+            />
+          </div>
         </div>
       )}
     </div>

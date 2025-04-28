@@ -1,6 +1,4 @@
 "use client";
-
-import Image from "next/image";
 import React, { useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -53,7 +51,7 @@ export function ThreeDCard({ imageSrc, width, height }) {
         animate={{ opacity: imageLoaded ? 1 : 0 }}
         transition={{ duration: 0.3 }}
       >
-        <Image
+        <img
           src={imageSrc}
           height={modalHeight}
           width={modalWidth}
