@@ -6,28 +6,7 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
-
-//  data
-const datas = [
-  {
-    title: "INDIVIDUALS",
-    text: "We offer personalized services for individuals, including film making, photography, graphics design, and content writing. Elevate your personal projects with our professional expertise.",
-    color: "white",
-    image: "./alpha.svg",
-  },
-  {
-    title: "SMALL BUSINESSES",
-    text: "Boost your small business with our website development, digital marketing, and brand building services. Our creative solutions help you stand out and grow effectively.",
-    color: "white",
-    image: "./beta.svg",
-  },
-  {
-    title: "LARGE ENTERPRISES",
-    text: "For large enterprises, we provide scalable services like advanced VFX, high-end cinematography, and comprehensive tech support to maintain your competitive edge.",
-    color: "white",
-    image: "./gamma.svg",
-  },
-];
+import { sevicecards } from "../data";
 
 // global variables
 const ROTATION_RANGE = 32.5;
@@ -47,7 +26,7 @@ export default function HoverCards() {
         transition={{ duration: 4, type: "spring" }}
         className="grid grid-cols-1 md:grid-cols-3 gap-4"
       >
-        {datas.map((data, index) => (
+        {sevicecards.map((data, index) => (
           <HoverCard key={index} data={data} />
         ))}
       </motion.div>

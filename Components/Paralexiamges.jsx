@@ -3,26 +3,9 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { ThreeDCard } from "@/Components/ui/ThreeDCard";
+import { images } from "./../data/index";
 
 export function Paraleximages() {
-  const images = [
-    "./Gallery/1.png",
-    "./Gallery/2.webp",
-    "./Gallery/3.jpeg",
-    "./Gallery/4.webp",
-    "./Gallery/5.jpg",
-    "./Gallery/6.jpg",
-    "./Gallery/7.jpg",
-    "./Gallery/8.jpg",
-    "./Gallery/9.png",
-    "./Gallery/10.jpg",
-    "./Gallery/11.jpg",
-    "./Gallery/12.jpg",
-    "./Gallery/13.jpg",
-    "./Gallery/14.jpg",
-    "./Gallery/15.jpg",
-  ].map((path) => (path.startsWith("/") ? "." + path : path));
-
   const [hoveredImage, setHoveredImage] = useState(null);
   const [hoveredPosition, setHoveredPosition] = useState({ x: 0, y: 0 });
   const [isMobile, setIsMobile] = useState(false);

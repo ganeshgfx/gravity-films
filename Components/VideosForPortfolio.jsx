@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useEffect, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { videos } from "../data";
 
 export function VideosForPortfolio() {
   const videoRefs = useRef([]);
@@ -42,24 +43,6 @@ export function VideosForPortfolio() {
 
     return () => observer.disconnect();
   }, []);
-
-  const videos = [
-    {
-      src: "./video/4.mp4", // Update paths for GitHub Pages
-      title: "3D Model",
-      desc: "Discover the Hindistan Unilever 3d View",
-      poster: "./after.jpg",
-    },
-    { src: "./video/2.mp4", title: "HRM" },
-    { src: "./video/3.mp4", title: "Product Shoot" },
-    { src: "./video/1.mp4", title: "Hazelcorp" },
-    { src: "./video/5.mp4", title: "Hindustan Unilever" },
-    { src: "./video/4.mp4", title: "3D Work" },
-    { src: "./video/6.mp4", title: "Icon Bags" },
-    { src: "./video/7.mp4", title: "Miss India" },
-    { src: "./video/8.mp4", title: "Nuts&Jars" },
-    { src: "./video/9.mp4", title: "SCreation" },
-  ];
 
   return (
     <section className=" ">

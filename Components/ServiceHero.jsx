@@ -1,5 +1,21 @@
 "use client";
 import React from "react";
+const FILM_MAKING = "film-making";
+const CINEMATOGRAPHY = "cinematography";
+const DIRECTING = "directing";
+const EDITING = "editing";
+const VFX_CGI = "vfx-cgi";
+const ANIMATIONS = "animations";
+const PHOTOGRAPHY = "photography";
+const GRAPHICS_DESIGN = "graphics-design";
+const MUSIC_SOUNDS = "music-sounds";
+const DIGITAL_MARKETING = "digital-marketing";
+const WEBSITE_DEVELOPMENT = "website-development";
+const APP_DEVELOPMENT = "app-development";
+const CONTENT_WRITING = "content-writing";
+const TECH_SUPPORT = "tech-support";
+const BRAND_BUILDING = "brand-building";
+const VISUAL_ART = "visual-art";
 import {
   MovieFilterTwoTone,
   VideocamTwoTone,
@@ -26,7 +42,7 @@ export default function ServiceHero() {
         Our Professional Services
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-8 max-w-7xl mx-auto p-4 gap-4">
-        {Data.map((service, index) => (
+        {allservice.map((service, index) => (
           <div
             key={index}
             className="p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 backdrop-blur-sm bg-opacity-20"
@@ -47,24 +63,7 @@ export default function ServiceHero() {
   );
 }
 
-const FILM_MAKING = "film-making";
-const CINEMATOGRAPHY = "cinematography";
-const DIRECTING = "directing";
-const EDITING = "editing";
-const VFX_CGI = "vfx-cgi";
-const ANIMATIONS = "animations";
-const PHOTOGRAPHY = "photography";
-const GRAPHICS_DESIGN = "graphics-design";
-const MUSIC_SOUNDS = "music-sounds";
-const DIGITAL_MARKETING = "digital-marketing";
-const WEBSITE_DEVELOPMENT = "website-development";
-const APP_DEVELOPMENT = "app-development";
-const CONTENT_WRITING = "content-writing";
-const TECH_SUPPORT = "tech-support";
-const BRAND_BUILDING = "brand-building";
-const VISUAL_ART = "visual-art";
-
-export const Data = [
+export const allservice = [
   {
     id: FILM_MAKING,
     title: "Film Making",

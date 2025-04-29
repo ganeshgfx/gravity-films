@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function ThreeDCard({ imageSrc, width, height }) {
   const cardRef = useRef(null);
@@ -51,13 +52,15 @@ export function ThreeDCard({ imageSrc, width, height }) {
         animate={{ opacity: imageLoaded ? 1 : 0 }}
         transition={{ duration: 0.3 }}
       >
-        <img
+        <Image
           src={imageSrc}
-          height={modalHeight}
-          width={modalWidth}
-          className="h-full w-full object-cover rounded-xl transition-shadow duration-500 ease-out"
           alt="thumbnail"
+          width={modalWidth}
+          height={modalHeight}
+          className="h-full w-full object-cover rounded-xl transition-shadow duration-500 ease-out"
           onLoad={() => setImageLoaded(true)}
+          draggable={false}
+          priority
         />
       </motion.div>
       {!imageLoaded && (

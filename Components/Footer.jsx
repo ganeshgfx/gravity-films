@@ -7,7 +7,8 @@ import {
   IconBrandLinkedin,
   IconMail,
 } from "@tabler/icons-react";
-const nav = "/FooterGvt.png";
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="flex flex-col w-full bg1 mt-auto">
@@ -90,8 +91,8 @@ export default function Footer() {
 
             {/* Logo and Company Info - Right Side */}
             <div className="flex items-center sm:flex-col sm:items-end gap-2  sm:mt-16">
-              <img
-                src={nav}
+              <Image
+                src="/FooterGvt.png"
                 width={40}
                 height={40}
                 className="object-contain sm:w-[100px] sm:h-[100px]"

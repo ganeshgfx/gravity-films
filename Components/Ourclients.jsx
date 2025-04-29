@@ -1,35 +1,10 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { Clientlogos } from "../data";
 
 const Ourclients = () => {
-  let logos = [
-    "./ClientLogos/3d.png",
-    "./ClientLogos/devkiba.png",
-    "./ClientLogos/samadhan.png",
-    "./ClientLogos/nift.png",
-    "./ClientLogos/cci.png",
-    "./ClientLogos/sc_dnhdd.png",
-    "./ClientLogos/akshar.png",
-    "./ClientLogos/fr.png",
-    "./ClientLogos/2dp.png",
-    "./ClientLogos/HRMD.png",
-    "./ClientLogos/hul.png",
-    "./ClientLogos/hzc.png",
-    "./ClientLogos/icon.png",
-    "./ClientLogos/ig.png",
-    "./ClientLogos/mahindra.png",
-    "./ClientLogos/haveli.png",
-    "./ClientLogos/mf.png",
-    "./ClientLogos/miss.png",
-    "./ClientLogos/force.png",
-    "./ClientLogos/bamboo.png",
-    "./ClientLogos/nnj.png",
-    "./ClientLogos/scf.png",
-    "./ClientLogos/vijay.png",
-    "./ClientLogos/visda.png",
-  ];
-
   return (
     <div className="container-width mx-auto  mt-8 mb-4 md:py-12 lg:py-16 lg:mt-0 lg:mx-4">
       <h2 className="text-2xl font-bold text-gray-800 text-center mb-4 lg:text-4xl">
@@ -41,7 +16,7 @@ const Ourclients = () => {
         companies in the industry to deliver our services.
       </p>
       <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
-        {logos.map((logo, index) => (
+        {Clientlogos.map((logo, index) => (
           <motion.div
             key={`logo_slide_${index}`}
             initial={{
@@ -58,7 +33,7 @@ const Ourclients = () => {
             viewport={{ once: true }}
             className="flex justify-center items-center p-2 sm:p-4 h-24 sm:h-32 w-24 sm:w-32 mx-auto bg-white rounded-lg border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
-            <img
+            <Image
               src={logo}
               alt={logo
                 .replace("./ClientLogos/", "")

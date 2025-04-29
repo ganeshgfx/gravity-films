@@ -4,6 +4,7 @@ import { SparklesCore } from "@/Components/ui/SparklesCore";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/Components/lib/utils";
 import { IconDotsVertical } from "@tabler/icons-react";
+import Image from "next/image";
 
 export const Compare = ({
   firstImage = "",
@@ -182,6 +183,8 @@ export const Compare = ({
         </motion.div>
       </AnimatePresence>
       <div className="overflow-hidden w-full h-full relative z-20 pointer-events-none">
+        import Image from "next/image"; // ✅ Make sure this import is at the
+        top
         <AnimatePresence initial={false}>
           {firstImage ? (
             <motion.div
@@ -194,14 +197,16 @@ export const Compare = ({
               }}
               transition={{ duration: 0 }}
             >
-              <img
+              <Image
                 alt="first image"
                 src={firstImage}
+                fill // ✅ This replaces width+height if you want absolute fill (since you already use absolute classes)
                 className={cn(
-                  "absolute inset-0  z-20 rounded-2xl flex-shrink-0 w-full h-full select-none",
+                  "absolute inset-0 z-20 rounded-2xl flex-shrink-0 w-full h-full object-cover select-none",
                   firstImageClassName
                 )}
                 draggable={false}
+                priority // Optional: loads faster if important
               />
             </motion.div>
           ) : null}
@@ -209,15 +214,24 @@ export const Compare = ({
       </div>
       <AnimatePresence initial={false}>
         {secondImage ? (
-          <motion.img
+          <motion.div
             className={cn(
-              "absolute top-0 left-0 z-[19]  rounded-2xl w-full h-full select-none",
+              "absolute top-0 left-0 z-[19] rounded-2xl w-full h-full select-none overflow-hidden",
               secondImageClassname
             )}
-            alt="second image"
-            src={secondImage}
-            draggable={false}
-          />
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <Image
+              alt="second image"
+              src={secondImage}
+              fill
+              className="rounded-2xl object-cover select-none"
+              draggable={false}
+              priority
+            />
+          </motion.div>
         ) : null}
       </AnimatePresence>
     </div>

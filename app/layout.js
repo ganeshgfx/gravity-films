@@ -38,7 +38,6 @@ export default function RootLayout({ children }) {
 
                     {/* Geo Tags */}
                     <meta name="geo.region" content="IN-DN" />
-                    <meta name="geo.placename" content="Silvassa" />
 
                     {/* Open Graph */}
                     <meta property="og:title" content={metadata.title} />
@@ -53,7 +52,7 @@ export default function RootLayout({ children }) {
                     <meta property="og:site_name" content="Gravity Films" />
                     <meta property="og:type" content="website" />
                     <meta property="og:locale" content="en_US" />
-                    <meta property="og:image" content="/og-image.jpg" />
+                    <meta property="og:image" content="share.png" />
 
                     {/* Twitter Card */}
                     <meta name="twitter:card" content="summary_large_image" />
@@ -63,7 +62,7 @@ export default function RootLayout({ children }) {
                          content={metadata.description}
                     />
                     <meta name="twitter:creator" content="@gravityfilmsin" />
-                    <meta name="twitter:image" content="/og-image.jpg" />
+                    <meta name="twitter:image" content="share.png" />
 
                     {/* Preload Font */}
                     <link

@@ -1,65 +1,8 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { motion } from "framer-motion";
-
-// Import icons
-import MovieFilterIcon from "@mui/icons-material/MovieFilter";
-import VideocamIcon from "@mui/icons-material/Videocam";
-import TheaterComedyIcon from "@mui/icons-material/TheaterComedy";
-import ContentCutIcon from "@mui/icons-material/ContentCut";
-import ViewInArIcon from "@mui/icons-material/ViewInAr";
-import AnimationIcon from "@mui/icons-material/Animation";
-import LocalSeeIcon from "@mui/icons-material/LocalSee";
-import DrawIcon from "@mui/icons-material/Draw";
-import MusicNoteIcon from "@mui/icons-material/MusicNote";
-import CampaignIcon from "@mui/icons-material/Campaign";
-import LanguageIcon from "@mui/icons-material/Language";
-import StayCurrentPortraitIcon from "@mui/icons-material/StayCurrentPortrait";
-import StickyNote2Icon from "@mui/icons-material/StickyNote2";
-import SupportAgentIcon from "@mui/icons-material/SupportAgent";
-import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
-import AutoFixHighIcon from "@mui/icons-material/AutoFixHigh";
-
-// Service Data
-const services = [
-  { id: "film_making", title: "Film Making", icon: <MovieFilterIcon /> },
-  { id: "cinematography", title: "Cinematography", icon: <VideocamIcon /> },
-  { id: "directing", title: "Directing", icon: <TheaterComedyIcon /> },
-  { id: "editing", title: "Editing", icon: <ContentCutIcon /> },
-  { id: "vfx_cgi", title: "VFX / CGI", icon: <ViewInArIcon /> },
-  { id: "animations", title: "Animations", icon: <AnimationIcon /> },
-  { id: "photography", title: "Photography", icon: <LocalSeeIcon /> },
-  { id: "graphics_design", title: "Graphics Design", icon: <DrawIcon /> },
-  { id: "music_sounds", title: "Music / Sounds", icon: <MusicNoteIcon /> },
-  {
-    id: "digital_marketing",
-    title: "Digital Marketing",
-    icon: <CampaignIcon />,
-  },
-  {
-    id: "website_development",
-    title: "Website Development",
-    icon: <LanguageIcon />,
-  },
-  {
-    id: "app_development",
-    title: "App Development",
-    icon: <StayCurrentPortraitIcon />,
-  },
-  {
-    id: "content_writing",
-    title: "Content Writing",
-    icon: <StickyNote2Icon />,
-  },
-  { id: "tech_support", title: "Tech Support", icon: <SupportAgentIcon /> },
-  {
-    id: "brand_building",
-    title: "Brand Building",
-    icon: <TipsAndUpdatesIcon />,
-  },
-  { id: "visual_art", title: "Visual Art", icon: <AutoFixHighIcon /> },
-];
+import { services } from "../data";
 
 // Shuffle Function
 const shuffleArray = (array) => {
