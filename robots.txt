@@ -1,4 +1,25 @@
 User-agent: *
 Allow: /
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /cgi-bin/
+Disallow: /*.json$
+Disallow: /*?*
+Crawl-delay: 10
 
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 5
+
+# XML Sitemaps
 Sitemap: https://gravityfilms.space/sitemap.xml
