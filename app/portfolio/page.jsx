@@ -15,7 +15,7 @@ const page = () => {
                >
                     <meta
                          itemProp="headline"
-                         content="Gravity Films - Portfolio Showcase of Cinematic Excellence and Editing Mastery"
+                         content="Gravity Films - Portfolio Showcase of Cinematic Excellence and Editing Mastery."
                     />
                     <meta
                          itemProp="description"
