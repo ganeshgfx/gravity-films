@@ -27,7 +27,10 @@ export default function Home() {
                          <Ourclients />
                          <Ourservices />
                          <Focuscards />
-                         <div className="flex flex-col items-center justify-center p-11 opacity-50 bg-gray-100">
+                         <div
+                              style={{ opacity: 0 }}
+                              className="flex flex-col items-center justify-center p-11 opacity-50 bg-gray-100"
+                         >
                               <h3 className="text-xl font-bold text-center mt-10">
                                    We are a team of passionate developers and
                                    designers dedicated to creating innovative
