@@ -42,6 +42,13 @@ export let Clientlogos = [
      "./ClientLogos/scf.png",
      "./ClientLogos/vijay.png",
      "./ClientLogos/visda.png",
+     "./ClientLogos/arv.png",
+     "./ClientLogos/etc.png",
+     "./ClientLogos/jezzy.png",
+     "./ClientLogos/pad.png",
+     "./ClientLogos/plugus.png",
+     "./ClientLogos/shiv.png",
+     "./ClientLogos/treat.png",
 ];
 //  home page our service
 export const services = [
