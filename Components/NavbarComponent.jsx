@@ -1,7 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Navbar, NavbarContent, NavbarItem } from "@nextui-org/react";
-import { CleanHandsOutlined } from "@mui/icons-material";
+import { AirOutlined, CleanHandsOutlined, MessageOutlined, MessageRounded } from "@mui/icons-material";
+import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
 import {
      IconBrandWhatsapp,
      IconBrandInstagram,
@@ -76,8 +77,8 @@ export default function NavbarComponent() {
                                              <Link
                                                   href="/servicess"
                                                   className={`flex items-center justify-center gap-1 px-4 py-2 rounded-full transition-all duration-300 ${isActive("/servicess")
-                                                            ? "bg-white shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
-                                                            : "hover:bg-white hover:shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+                                                       ? "bg-white shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+                                                       : "hover:bg-white hover:shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
                                                        }`}
                                              >
                                                   <CleanHandsOutlined />
@@ -88,8 +89,8 @@ export default function NavbarComponent() {
                                              <Link
                                                   href="/portfolio"
                                                   className={`flex items-center gap-1 px-4 py-2 rounded-full transition-all duration-300 ${isActive("/portfolio")
-                                                            ? "bg-white shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
-                                                            : "hover:bg-white hover:shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+                                                       ? "bg-white shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+                                                       : "hover:bg-white hover:shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
                                                        }`}
                                              >
                                                   <IconBriefcase2 stroke={2} size={24} />
@@ -100,12 +101,24 @@ export default function NavbarComponent() {
                                              <Link
                                                   href="/aboutus"
                                                   className={`flex items-center gap-1 px-4 py-2 rounded-full transition-all duration-300 ${isActive("/aboutus")
-                                                            ? "bg-white shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
-                                                            : "hover:bg-white hover:shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+                                                       ? "bg-white shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+                                                       : "hover:bg-white hover:shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
                                                        }`}
                                              >
                                                   <IconInfoCircle stroke={2} size={24} />
                                                   About Us
+                                             </Link>
+                                        </NavbarItem>
+                                        <NavbarItem>
+                                             <Link
+                                                  href="/contact-us"
+                                                  className={`flex items-center gap-1 px-4 py-2 rounded-full transition-all duration-300 ${isActive("/contact-us")
+                                                       ? "bg-white shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+                                                       : "hover:bg-white hover:shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+                                                       }`}
+                                             >
+                                                  <ChatBubbleOutlineOutlinedIcon stroke={2} size={24} />
+                                                  Contact Us
                                              </Link>
                                         </NavbarItem>
                                    </NavbarContent>
