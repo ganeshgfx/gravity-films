@@ -87,7 +87,7 @@ const page = () => {
                     <meta itemProp="author" content="Gravity Films" />
                     <Reveal>
                          <div>
-                              <h2 className="text-2xl font-bold text-gray-800 text-center lg:pt-4">
+                              <h2 className="text-2xl font-bold text-gray-800 text-center lg:pt-4 mt-4">
                                    CONTACT US
                               </h2>
                               <div className="text-center">

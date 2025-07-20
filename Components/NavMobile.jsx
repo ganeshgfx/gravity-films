@@ -7,6 +7,7 @@ import {
      InfoOutlined,
 } from "@mui/icons-material";
 import { usePathname } from "next/navigation"; // Add this import
+import { Divider } from "@mui/material";
 
 export function NavMobile() {
      const pathname = usePathname(); // Get current route
@@ -15,10 +16,10 @@ export function NavMobile() {
      const isActive = (path) => pathname === path;
 
      return (
-          <div className="flex justify-between items-center gap-2 max-w-screen-sm mx-auto">
+          <div className="flex flex-col justify-between items-stretch gap-2 max-w-screen-sm mx-auto">
                <Link
                     href="/servicess"
-                    className={`flex items-center flex-1 px-2 py-2 rounded-full bg-white text-center text-sm transition-all duration-300 ${isActive("/servicess")
+                    className={`flex items-center justify-center flex-1 px-2 py-2 rounded-full bg-white text-center text-sm transition-all duration-300 ${isActive("/servicess")
                          ? "shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
                          : "hover:shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
                          }`}
@@ -28,7 +29,7 @@ export function NavMobile() {
                </Link>
                <Link
                     href="/portfolio"
-                    className={`flex items-center flex-1 px-2 py-2 rounded-full bg-white text-center text-sm transition-all duration-300 ${isActive("/portfolio")
+                    className={`flex items-center justify-center flex-1 px-2 py-2 rounded-full bg-white text-center text-sm transition-all duration-300 ${isActive("/portfolio")
                          ? "shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
                          : "hover:shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
                          }`}
@@ -38,7 +39,7 @@ export function NavMobile() {
                </Link>
                <Link
                     href="/aboutus"
-                    className={`flex items-center flex-1 px-2 py-2 rounded-full bg-white text-center text-sm transition-all duration-300 ${isActive("/aboutus")
+                    className={`flex items-center justify-center flex-1 px-2 py-2 rounded-full bg-white text-center text-sm transition-all duration-300 ${isActive("/aboutus")
                          ? "shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
                          : "hover:shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
                          }`}
@@ -48,13 +49,13 @@ export function NavMobile() {
                </Link>
                <Link
                     href="/contact-us"
-                    className={`flex items-center flex-1 px-2 py-2 rounded-full bg-white text-center text-sm transition-all duration-300 ${isActive("/contact-us")
+                    className={`flex items-center justify-center flex-1 px-2 py-2 rounded-full bg-white text-center text-sm transition-all duration-300 ${isActive("/contact-us")
                          ? "shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
                          : "hover:shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
                          }`}
                >
                     <WorkOutline fontSize="small" />
-                    Contact&nbsp;Us
+                    Contact Us
                </Link>
           </div>
      );

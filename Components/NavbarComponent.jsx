@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Navbar, NavbarContent, NavbarItem } from "@nextui-org/react";
-import { AirOutlined, CleanHandsOutlined, MessageOutlined, MessageRounded } from "@mui/icons-material";
+import { AirOutlined, CleanHandsOutlined, DeleteOutline, MessageOutlined, MessageRounded } from "@mui/icons-material";
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
 import {
      IconBrandWhatsapp,
@@ -10,6 +10,7 @@ import {
      IconBrandLinkedin,
      IconInfoCircle,
      IconBriefcase2,
+     IconMenu2,
 } from "@tabler/icons-react";
 import { NavMobile } from "@/Components/NavMobile";
 import Image from "next/image";
@@ -17,11 +18,14 @@ import navicon from "@/public/gravitysmall.png";
 import { Link as NextLink } from "@nextui-org/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation"; // Add this import
+import { Button, IconButton } from "@mui/material";
+import Reveal from "./anime/Reveal";
 
 export default function NavbarComponent() {
      const pathname = usePathname(); // Get current route
      const [isScrolled, setIsScrolled] = useState(false);
      const [isMenuOpen, setIsMenuOpen] = useState(false);
+     const [hamburger, setHamburger] = useState(false);
      const [isMobile, setIsMobile] = useState(false);
 
      // Check if current path matches
@@ -154,13 +158,37 @@ export default function NavbarComponent() {
                                    >
                                         <IconBrandLinkedin stroke={1.5} size={24} />
                                    </NextLink>
+                                   {
+                                        (isMobile && (
+                                             <div>
+                                                  <button
+                                                       className="relative flex flex-col justify-center items-center w-8 h-6 group sm:hidden"
+                                                       onClick={() => setHamburger(!hamburger)}
+                                                       aria-label="Toggle menu"
+                                                  >
+                                                       <span
+                                                            className={`block w-6 h-0.5 bg-black transform transition duration-300 ease-in-out 
+               ${hamburger ? "rotate-45 translate-y-1.5" : ""}`}
+                                                       />
+                                                       <span
+                                                            className={`block w-6 h-0.5 bg-black my-1 transition-all duration-300 ease-in-out 
+               ${hamburger ? "opacity-0" : ""}`}
+                                                       />
+                                                       <span
+                                                            className={`block w-6 h-0.5 bg-black transform transition duration-300 ease-in-out 
+               ${hamburger ? "-rotate-45 -translate-y-1.5" : ""}`}
+                                                       />
+                                                  </button>
+                                             </div>
+                                        ))
+                                   }
                               </div>
                          </div>
                     </div>
                </Navbar>
 
                {/* Mobile Navigation Below Navbar */}
-               {isMobile && (
+               {(hamburger && isMobile) && (
                     <div className="w-full py-2 px-4 border-t">
                          <NavMobile />
                     </div>
