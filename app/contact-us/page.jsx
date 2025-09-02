@@ -5,6 +5,7 @@ import Link from "next/link";
 import Map from "@/Components/Map";
 import Reveal from "@/Components/anime/Reveal";
 import { SendHorizonal, SendIcon } from "lucide-react";
+import axios from "axios";
 
 const page = () => {
      const [form, setForm] = useState({
@@ -26,7 +27,7 @@ const page = () => {
 
           try {
                // Convert form data to URL parameters
-               const params = new URLSearchParams({
+               const params = {
                     name: form.name,
                     organization: form.organization,
                     address: form.address,
@@ -34,19 +35,19 @@ const page = () => {
                     phone: form.phone,
                     link: form.social,
                     message: form.service
-               });
+               };
 
-               const response = await fetch(
-                    `https://srdgas.online/api/gravity-form?${params.toString()}`,
+               const response = await axios.get(
+                    "https://srdgas.online/api/gravity-form",
                     {
-                         method: 'GET',
+                         params,
                          headers: {
                               'Content-Type': 'application/json',
                          }
                     }
                );
 
-               if (response.ok) {
+               if (response.status === 200) {
                     alert('Form submitted successfully!');
                     // Reset form
                     setForm({
