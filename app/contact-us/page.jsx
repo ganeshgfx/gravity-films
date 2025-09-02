@@ -37,7 +37,7 @@ const page = () => {
                });
 
                const response = await fetch(
-                    `https://srdgas.online/public/api/gravity-form?${params.toString()}`,
+                    `https://srdgas.online/api/gravity-form?${params.toString()}`,
                     {
                          method: 'GET',
                          headers: {

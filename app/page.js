@@ -1,7 +1,7 @@
-import { UIsparkle } from "@/components/UIsparkle";
-import { Focuscards } from "@/components/Focuscards";
-import Ourclients from "@/components/Ourclients";
-import Ourservices from "@/components/Ourservices";
+import UIsparkle from "@/Components/UIsparkle";
+import Focuscards from "@/Components/Focuscards";
+import Ourclients from "@/Components/Ourclients";
+import Ourservices from "@/Components/Ourservices";
 import Reveal from "@/Components/anime/Reveal";
 export default function Home() {
      return (
