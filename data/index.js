@@ -130,25 +130,29 @@ export const cards = [
                "/WorkCards/hul4.JPG",
           ],
      },
+     // {
+     //      title: "ICON BAGS",
+     //      images: [
+     //           "/WorkCards/icon1.jpg",
+     //           "/WorkCards/icon2.jpg",
+     //           "/WorkCards/icon3.jpg",
+     //           "/WorkCards/icon4.jpg",
+     //      ],
+     // },
      {
-          title: "ICON BAGS",
-          images: [
-               "/WorkCards/icon1.jpg",
-               "/WorkCards/icon2.jpg",
-               "/WorkCards/icon3.jpg",
-               "/WorkCards/icon4.jpg",
-          ],
+          title: "Usa Divine Nutrition",
+          images: ["/WorkCards/usa1.png", "/WorkCards/usa2.png"],
      },
      {
           title: "Indie Grow",
           images: ["/WorkCards/ig.png", "/WorkCards/ig.png"],
      },
      {
-          title: "2dP",
+          title: "Portfolio",
           images: [
-               "/WorkCards/2dp.jpg",
-               "/WorkCards/2dp2.jpg",
-               "/WorkCards/2dp3.jpg",
+               "/WorkCards/zara1.png",
+               "/WorkCards/zara2.png",
+               "/WorkCards/zara3.png",
           ],
      },
      {
@@ -177,7 +181,6 @@ export const cards = [
           ],
      },
 ];
-
 //  service page top 3 cards
 export const sevicecards = [
      {
@@ -199,7 +202,6 @@ export const sevicecards = [
           image: "./gamma.svg",
      },
 ];
-
 // portfolio page
 export const images = [
      "./Gallery/1.png",
@@ -218,7 +220,6 @@ export const images = [
      "./Gallery/14.jpg",
      "./Gallery/15.jpg",
 ].map((path) => (path.startsWith("/") ? "." + path : path));
-
 // portfolio video
 export const videos = [
      {
@@ -227,17 +228,44 @@ export const videos = [
           desc: "Discover the Hindistan Unilever 3d View",
           poster: "./after.jpg",
      },
-     { src: "./video/2.mp4", title: "HRM" },
-     { src: "./video/3.mp4", title: "Product Shoot" },
-     { src: "./video/1.mp4", title: "Hazelcorp" },
-     { src: "./video/5.mp4", title: "Hindustan Unilever" },
-     { src: "./video/4.mp4", title: "3D Work" },
-     { src: "./video/6.mp4", title: "Icon Bags" },
-     { src: "./video/7.mp4", title: "Miss India" },
-     { src: "./video/8.mp4", title: "Nuts&Jars" },
-     { src: "./video/9.mp4", title: "SCreation" },
+     {
+          src: "https://video.gravityfilms.space/gravity-films/video/2.mp4",
+          title: "HRM",
+     },
+     {
+          src: "https://video.gravityfilms.space/gravity-films/video/3.mp4",
+          title: "Product Shoot",
+     },
+     {
+          src: "https://video.gravityfilms.space/gravity-films/video/1.mp4",
+          title: "Hazelcorp",
+     },
+     {
+          src: "https://video.gravityfilms.space/gravity-films/video/5.mp4",
+          title: "Hindustan Unilever",
+     },
+     {
+          src: "https://video.gravityfilms.space/gravity-films/video/4.mp4",
+          title: "3D Work",
+     },
+     {
+          src: "https://video.gravityfilms.space/gravity-films/video/6.mp4",
+          title: "Icon Bags",
+     },
+     {
+          src: "https://video.gravityfilms.space/gravity-films/video/7.mp4",
+          title: "Miss India",
+     },
+     {
+          src: "https://video.gravityfilms.space/gravity-films/video/8.mp4",
+          title: "Nuts&Jars",
+     },
+     {
+          src: "https://video.gravityfilms.space/gravity-films/video/9.mp4",
+          title: "SCreation",
+     },
 ];
-
+///video/7.mp4"
 // About us page
 export const people = [
      {
@@ -277,3 +305,4 @@ export const people = [
      //     image2: "/Team/People/sneha.jpg",
      //   },
 ];
+//"D:\Projects\2025 11 November\hrmd\" 2976 | 2979 | 2995 | 2996 | 2998 | 3005 | 3008 | 3009 | 3012 | 3014 | 3016 | 3019 | 3024 | 3033 | 3034 | 3057 | 3062 | 3074 | 3075 | 3078 | 3092 | 3106 | 3107 | 3159 | 3165 | 3166 | 3171 | 3181 | 3183 | 3198 | 3202 | 3204

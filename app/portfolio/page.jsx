@@ -29,16 +29,16 @@ const page = () => {
                                         CINEMATIC EXPERIENCE
                                    </h2>
                                    <video
-                                        src="./video/2.mp4"
+                                        src="https://video.gravityfilms.space/gravity-films/video/2.mp4"
                                         autoPlay
                                         loop
                                         muted
                                         playsInline
-                                        poster=".\before.jpg"
+                                        // poster=".\before.jpg"
                                         className="rounded-lg border border-gray-300 shadow-lg lg:w-full lg:h-[75vh] object-cover"
                                    />
                               </div>
-                              <h2 className="text-2xl font-bold text-gray-800 text-center lg:text-4xl mt-8">
+                              {/* <h2 className="text-2xl font-bold text-gray-800 text-center lg:text-4xl mt-8">
                                    EDITING
                               </h2>
                               <p className="text-justify text-gray-600 mb-4 px-4 lg:px-8 ">
@@ -55,7 +55,7 @@ const page = () => {
                                         slideMode="hover"
                                         autoplay={true}
                                    />
-                              </div>
+                              </div> */}
 
                               <Paraleximages />
                               <VideosForPortfolio />

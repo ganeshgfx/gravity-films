@@ -4,8 +4,9 @@ import SocialCards from "../../Components/Socialmedia";
 import Link from "next/link";
 import Map from "@/Components/Map";
 import Reveal from "@/Components/anime/Reveal";
-import { SendHorizonal, SendIcon } from "lucide-react";
+import { Disc3, SendHorizonal, SendIcon } from "lucide-react";
 import axios from "axios";
+import { CircularProgress } from "@mui/material";
 
 const page = () => {
      const [form, setForm] = useState({
@@ -22,9 +23,11 @@ const page = () => {
           setForm({ ...form, [e.target.id]: e.target.value });
      };
 
+     const [loading, setLoading] = useState(false);
+
      const handleSubmit = async (e) => {
           e.preventDefault();
-
+          setLoading(true);
           try {
                // Convert form data to URL parameters
                const params = {
@@ -46,8 +49,8 @@ const page = () => {
                          }
                     }
                );
-
-               if (response.status === 200) {
+               //console.log(response);
+               if (response?.data?.success) {
                     alert('Form submitted successfully!');
                     // Reset form
                     setForm({
@@ -66,6 +69,7 @@ const page = () => {
                console.error('Error submitting form:', error);
                alert('Failed to submit form. Please try again.');
           }
+          setLoading(false);
      };
 
      return (
@@ -217,7 +221,13 @@ const page = () => {
                                                        Submit
                                                   </span>
                                                   <span className="transition-transform duration-200 group-hover:translate-x-1">
-                                                       <SendHorizonal />
+                                                       {
+                                                            (loading) ? (
+                                                                 <Disc3 className="animate-spin" />
+                                                            ) : (
+                                                                 <SendHorizonal />
+                                                            )
+                                                       }
                                                   </span>
                                              </button>
                                         </div>
