@@ -15,7 +15,6 @@ import StickyNote2Icon from "@mui/icons-material/StickyNote2";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 import AutoFixHighIcon from "@mui/icons-material/AutoFixHigh";
-
 // home page client logos
 export let Clientlogos = [
      "./ClientLogos/3d.png",
@@ -223,7 +222,7 @@ export const images = [
 // portfolio video
 export const videos = [
      {
-          src: "./video/4.mp4", // Update paths for GitHub Pages
+          src: "https://video.gravityfilms.space/gravity-films/video/4.mp4", // Update paths for GitHub Pages
           title: "3D Model",
           desc: "Discover the Hindistan Unilever 3d View",
           poster: "./after.jpg",
