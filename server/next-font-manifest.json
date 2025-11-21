@@ -1,0 +1,23 @@
+{
+  "app": {
+    "[project]/app/aboutus/page": [
+      "static/media/c18e1fdd45d181de-s.p.111ac9aa.woff2",
+      "static/media/22a9a2c1b06b5ad0-s.p.4b167694.woff2",
+      "static/media/a920aac21595a9fd-s.p.da437418.woff2",
+      "static/media/bca38f7a2c3c301d-s.p.c336a9d1.woff2",
+      "static/media/f7bb5d5adbf9d12c-s.p.ab5dbd7e.woff2",
+      "static/media/d492bb9c458a4d65-s.p.d95035ce.woff2"
+    ],
+    "[project]/app/page": [
+      "static/media/c18e1fdd45d181de-s.p.111ac9aa.woff2",
+      "static/media/22a9a2c1b06b5ad0-s.p.4b167694.woff2",
+      "static/media/a920aac21595a9fd-s.p.da437418.woff2",
+      "static/media/bca38f7a2c3c301d-s.p.c336a9d1.woff2",
+      "static/media/f7bb5d5adbf9d12c-s.p.ab5dbd7e.woff2",
+      "static/media/d492bb9c458a4d65-s.p.d95035ce.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

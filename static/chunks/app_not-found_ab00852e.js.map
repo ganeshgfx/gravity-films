@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///D:/Gravity/Site/gravity-films/app/not-found.js"],"sourcesContent":["\"use client\";\r\n\r\nimport { useRouter } from \"next/navigation\";\r\nimport { useLayoutEffect } from \"react\";\r\n\r\nexport default function NotFound() {\r\n     const router = useRouter();\r\n\r\n     useLayoutEffect(() => {\r\n          // Use replace instead of push to avoid browser history entry\r\n          router.replace(\"/\");\r\n     }, [router]);\r\n\r\n     return null;\r\n}\r\n"],"names":[],"mappings":";;;AAEA;AACA;;AAHA;;;AAKe,SAAS;;IACnB,MAAM,SAAS,CAAA,GAAA,qIAAA,CAAA,YAAS,AAAD;IAEvB,CAAA,GAAA,6JAAA,CAAA,kBAAe,AAAD;oCAAE;YACX,6DAA6D;YAC7D,OAAO,OAAO,CAAC;QACpB;mCAAG;QAAC;KAAO;IAEX,OAAO;AACZ;GATwB;;QACJ,qIAAA,CAAA,YAAS;;;KADL","debugId":null}}]
+}
