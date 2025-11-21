@@ -81,7 +81,7 @@ const page = () => {
                                         online presence and marketing.
                                    </p>
                               </section>
-                              <section className="Ourteam">
+                              <section className="Ourteam hidden">
                                    <h2 className="text-2xl font-bold text-gray-800 text-center mt-8">
                                         MEET OUR TEAM MEMBERS
                                    </h2>
