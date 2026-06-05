@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Gravity Films
 
-## Getting Started
+Website for Gravity Films, a creative digital content and filmmaking agency based in Silvassa, India. Built with Next.js App Router, React, Tailwind CSS, and a static export flow for GitHub Pages.
 
-First, run the development server:
+Production: https://gravityfilms.space
+
+## Features
+
+- Responsive marketing site for Gravity Films
+- Home page with hero effects, services, client logos, and work cards
+- Portfolio page with gallery images and hosted video showcases
+- Services page for individuals, small businesses, and enterprises
+- About page with story, contact links, and location map
+- Contact page with inquiry form, social links, and map
+- SEO metadata, Open Graph data, robots, sitemap, and JSON-LD organization schema
+
+## Tech Stack
+
+- Next.js 15
+- React 19
+- Tailwind CSS 3
+- Framer Motion
+- MUI, NextUI, Lucide, and Tabler icons
+- tsparticles and custom UI effects
+- Axios for contact form submission
+- GitHub Pages deployment via `gh-pages`
+
+## Requirements
+
+- Node.js 18.18+ or current LTS
+- npm
+
+## Setup
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev      # Start dev server with Turbopack
+npm run build    # Build static export into dist/
+npm run start    # Start Next production server
+npm run lint     # Run configured lint script
+npm run deploy   # Add dist/.nojekyll and publish dist/
+npm run gh-pages # Publish dist/ to GitHub Pages
+npm run push     # Build, then publish dist/
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+app/
+  page.js              Home page
+  layout.js            Root layout, metadata, schema, nav, footer
+  aboutus/page.jsx     About page
+  contact-us/page.jsx  Contact form and location
+  portfolio/page.jsx   Portfolio gallery and videos
+  servicess/page.jsx   Services page
+Components/
+  ui/                  Reusable UI components
+  anime/               Reveal animation wrapper
+  *.jsx                Site sections and shared components
+data/index.js          Services, clients, cards, gallery, videos, people
+public/                Images, fonts, client logos, gallery, CNAME, SEO files
+dist/                  Static export output
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Static Export
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+`next.config.mjs` uses:
 
-## Deploy on Vercel
+- `output: "export"`
+- `distDir: "dist"`
+- `images.unoptimized: true`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This creates a static site in `dist/` for GitHub Pages. `public/CNAME` points the custom domain to `gravityfilms.space`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+```bash
+npm run push
+```
+
+This runs `next build`, exports to `dist/`, then publishes `dist/` through `gh-pages`.
+
+## Content Updates
+
+- Edit routes in `app/`
+- Edit shared sections in `Components/`
+- Edit service, client, portfolio, and team data in `data/index.js`
+- Add static assets under `public/`
+
+## Contact
+
+Contact form route: `/contact-us`
+
+Business email in site schema: `info@gravityfilms.space`
