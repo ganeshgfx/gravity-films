@@ -148,6 +148,20 @@ export default function RootLayout({ children }) {
                     />
                </head>
                <body className="flex flex-col min-h-screen">
+                                             <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      minHeight: '4vh',
+                      width: '100%',
+                      fontSize: '16px',
+                      fontWeight: 'bold',
+                      textAlign: 'center',
+                      backgroundColor: '#FFAE6E',
+                      borderRadius: '8px',
+                    }}>
+                      This website is under maintenance, we will be back soon.
+                    </div>
                     <Providers>
                          <NavbarComponent />
                          {children}
