@@ -1,24 +1,201 @@
 1:"$Sreact.fragment"
-2:I[53181,["720","static/chunks/720-23b34f78722f45d4.js","855","static/chunks/855-66525099a7abb82e.js","21","static/chunks/21-69be95fe2b0236c2.js","874","static/chunks/874-504ce53bd266cfc2.js","124","static/chunks/124-e11a5700764f2639.js","177","static/chunks/app/layout-bde4316c491290b3.js"],"default"]
-3:I[94901,["720","static/chunks/720-23b34f78722f45d4.js","855","static/chunks/855-66525099a7abb82e.js","21","static/chunks/21-69be95fe2b0236c2.js","874","static/chunks/874-504ce53bd266cfc2.js","124","static/chunks/124-e11a5700764f2639.js","177","static/chunks/app/layout-bde4316c491290b3.js"],"default"]
-4:I[87555,[],""]
-5:I[31295,[],""]
-6:I[34584,["345","static/chunks/app/not-found-a419f8d63a8d943a.js"],"default"]
-7:I[67784,["720","static/chunks/720-23b34f78722f45d4.js","855","static/chunks/855-66525099a7abb82e.js","21","static/chunks/21-69be95fe2b0236c2.js","874","static/chunks/874-504ce53bd266cfc2.js","124","static/chunks/124-e11a5700764f2639.js","177","static/chunks/app/layout-bde4316c491290b3.js"],"default"]
-8:I[46829,["720","static/chunks/720-23b34f78722f45d4.js","855","static/chunks/855-66525099a7abb82e.js","424","static/chunks/424-81abdffd4a527e1f.js","144","static/chunks/app/servicess/page-e6af4d68cb7f62b4.js"],"default"]
-9:I[2570,["720","static/chunks/720-23b34f78722f45d4.js","855","static/chunks/855-66525099a7abb82e.js","424","static/chunks/424-81abdffd4a527e1f.js","144","static/chunks/app/servicess/page-e6af4d68cb7f62b4.js"],"default"]
-a:I[38542,["720","static/chunks/720-23b34f78722f45d4.js","855","static/chunks/855-66525099a7abb82e.js","424","static/chunks/424-81abdffd4a527e1f.js","144","static/chunks/app/servicess/page-e6af4d68cb7f62b4.js"],"default"]
-b:I[59665,[],"OutletBoundary"]
-d:I[74911,[],"AsyncMetadataOutlet"]
-f:I[59665,[],"ViewportBoundary"]
-11:I[59665,[],"MetadataBoundary"]
-12:"$Sreact.suspense"
-14:I[28393,[],""]
-:HL["/_next/static/css/eaa4c4f38be0ded4.css","style"]
+7:I[28393,[],""]
+:HL["/_next/static/css/a8149adc1db76b6c.css","style"]
 :HL["/_next/static/css/a405740e76272ede.css","style"]
-0:{"P":null,"b":"PmvJDk0wn8pxKxPN4-b08","p":"","c":["","servicess"],"i":false,"f":[[["",{"children":["servicess",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eaa4c4f38be0ded4.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/a405740e76272ede.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"__className_f1435f","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preload","href":"/fonts/Poppins-700.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":[\"Organization\",\"LocalBusiness\"],\"@id\":\"https://gravityfilms.space\",\"name\":\"Gravity Films\",\"url\":\"https://gravityfilms.space\",\"logo\":\"https://gravityfilms.space/logo.png\",\"image\":\"https://gravityfilms.space/share.png\",\"description\":\"Creative digital content agency specializing in fashion brands and e-commerce shoots\",\"foundingDate\":\"2020\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Siyaram Skyline, Near Our Lady Of Help English School, Samarvarni\",\"addressLocality\":\"Silvassa\",\"addressRegion\":\"Dadra and Nagar Haveli\",\"postalCode\":\"396230\",\"addressCountry\":\"IN\"},\"contactPoint\":{\"@type\":\"ContactPoint\",\"telephone\":\"+919033535655\",\"email\":\"info@gravityfilms.space\",\"contactType\":\"customer service\"},\"sameAs\":[\"https://instagram.com/gravityfilmsin\",\"https://www.linkedin.com/company/gravityfilms\",\"https://twitter.com/gravityfilmsin\"],\"priceRange\":\"₹₹₹\",\"serviceType\":[\"Digital Content Creation\",\"Photography\",\"Videography\",\"Brand Strategy\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"url\":\"https://gravityfilms.space\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https://gravityfilms.space/search?q={search_term_string}\",\"query-input\":\"required name=search_term_string\"}}"}}]]}],["$","body",null,{"className":"flex flex-col min-h-screen","children":[["$","div",null,{"style":{"display":"flex","alignItems":"center","justifyContent":"center","minHeight":"4vh","width":"100%","fontSize":"16px","fontWeight":"bold","textAlign":"center","backgroundColor":"#FFAE6E","borderRadius":"8px"},"children":"This website is under maintenance, we will be back soon."}],["$","$L2",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L6",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L7",null,{}]]}]]}]]}]]}],{"children":["servicess",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","main",null,{"children":["$","article",null,{"itemScope":true,"itemType":"http://schema.org/Article","aria-label":"Gravity Films Services We Offer to Our Clients","className":"main-content","role":"main","children":[["$","meta",null,{"itemProp":"headline","content":"Gravity Films - Services We Offer to Our Clients"}],["$","meta",null,{"itemProp":"description","content":"We offer a range of services including video production, photography, and post-production. Our team is dedicated to delivering high-quality content that meets your needs."}],["$","meta",null,{"itemProp":"author","content":"Gravity Films"}],["$","$L8",null,{"children":["$","div",null,{"children":[["$","$L9",null,{}],["$","$La",null,{}]]}]}]]}]}],null,["$","$Lb",null,{"children":["$Lc",["$","$Ld",null,{"promise":"$@e"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lf",null,{"children":"$L10"}],null],["$","$L11",null,{"children":["$","div",null,{"hidden":true,"children":["$","$12",null,{"fallback":null,"children":"$L13"}]}]}]]}],false]],"m":"$undefined","G":["$14",[]],"s":false,"S":true}
-10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-c:null
-15:I[38175,[],"IconMark"]
-e:{"metadata":[["$","title","0",{"children":"Gravity Films | Creative Digital Content & Filmmaking Agency"}],["$","meta","1",{"name":"description","content":"Gravity Films is a creative digital content agency specializing in fashion brands, e-commerce shoots, and comprehensive digital branding solutions. Based in Silvassa, India."}],["$","meta","2",{"name":"keywords","content":"digital content, filmmaking, e-commerce shoots, fashion brands, digital branding, creative agency, Silvassa, video production, photography, brand strategy"}],["$","meta","3",{"name":"robots","content":"index, follow"}],["$","meta","4",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","meta","5",{"name":"geo.region","content":"IN-DN"}],["$","meta","6",{"name":"google-site-verification","content":"your-google-verification-code"}],["$","meta","7",{"name":"yandex-verification","content":"your-yandex-verification-code"}],["$","meta","8",{"property":"og:title","content":"Gravity Films | Creative Digital Content & Filmmaking Agency"}],["$","meta","9",{"property":"og:description","content":"Gravity Films is a creative digital content agency specializing in fashion brands, e-commerce shoots, and comprehensive digital branding solutions. Based in Silvassa, India."}],["$","meta","10",{"property":"og:url","content":"https://gravityfilms.space"}],["$","meta","11",{"property":"og:site_name","content":"Gravity Films"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://gravityfilms.space/share.png"}],["$","meta","14",{"property":"og:image:width","content":"1200"}],["$","meta","15",{"property":"og:image:height","content":"630"}],["$","meta","16",{"property":"og:image:alt","content":"Gravity Films Logo"}],["$","meta","17",{"property":"og:image:type","content":"image/png"}],["$","meta","18",{"property":"og:type","content":"website"}],["$","meta","19",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","20",{"name":"twitter:site","content":"@gravityfilmsin"}],["$","meta","21",{"name":"twitter:creator","content":"@gravityfilmsin"}],["$","meta","22",{"name":"twitter:title","content":"Gravity Films | Creative Digital Content & Filmmaking Agency"}],["$","meta","23",{"name":"twitter:description","content":"Gravity Films is a creative digital content agency specializing in fashion brands, e-commerce shoots, and comprehensive digital branding solutions. Based in Silvassa, India."}],["$","meta","24",{"name":"twitter:image","content":"https://gravityfilms.space/share.png"}],["$","meta","25",{"name":"twitter:image:alt","content":"Gravity Films Logo"}],["$","link","26",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"32x32"}],["$","$L15","27",{}]],"error":null,"digest":"$undefined"}
-13:"$e:metadata"
+2:T2071,
+                         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+                         html, body {
+                              margin: 0 !important;
+                              padding: 0 !important;
+                              width: 100vw !important;
+                              height: 100vh !important;
+                              overflow: hidden !important;
+                              background: #000 !important;
+                         }
+
+                         * { box-sizing: border-box; }
+
+                         @keyframes floatUp {
+                              0%   { transform: translateY(100vh) scale(0); opacity: 0; }
+                              10%  { opacity: 0.5; }
+                              90%  { opacity: 0.15; }
+                              100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+                         }
+
+                         @keyframes pulseGlow {
+                              0%, 100% {
+                                   filter: invert(1) drop-shadow(0 0 8px rgba(255,255,255,0.25));
+                                   transform: scale(1);
+                              }
+                              50% {
+                                   filter: invert(1) drop-shadow(0 0 24px rgba(255,255,255,0.6));
+                                   transform: scale(1.03);
+                              }
+                         }
+
+                         @keyframes fadeSlideUp {
+                              0%   { opacity: 0; transform: translateY(28px); }
+                              100% { opacity: 1; transform: translateY(0); }
+                         }
+
+                         @keyframes blink {
+                              0%, 100% { opacity: 1; }
+                              50%       { opacity: 0; }
+                         }
+
+                         @keyframes orbitRing {
+                              from { transform: translate(-50%, -50%) rotate(0deg); }
+                              to   { transform: translate(-50%, -50%) rotate(360deg); }
+                         }
+
+                         @keyframes shimmer {
+                              0%   { background-position: -200% center; }
+                              100% { background-position: 200% center; }
+                         }
+
+                         .maintenance-bg {
+                              position: fixed;
+                              inset: 0;
+                              width: 100vw;
+                              height: 100vh;
+                              background: #000;
+                              display: flex;
+                              flex-direction: column;
+                              align-items: center;
+                              justify-content: center;
+                              font-family: 'Inter', 'Poppins', sans-serif;
+                              overflow: hidden;
+                         }
+
+                         .particle {
+                              position: absolute;
+                              border-radius: 50%;
+                              background: radial-gradient(circle, rgba(255,255,255,0.6), transparent);
+                              animation: floatUp linear infinite;
+                              pointer-events: none;
+                         }
+
+                         .orbit-ring {
+                              position: absolute;
+                              top: 50%;
+                              left: 50%;
+                              border-radius: 50%;
+                              border: 1px solid rgba(255,255,255,0.07);
+                              animation: orbitRing linear infinite;
+                              pointer-events: none;
+                         }
+
+                         .logo-img {
+                              width: clamp(160px, 55vw, 360px);
+                              max-width: 88vw;
+                              height: auto;
+                              display: block;
+                              animation: pulseGlow 3s ease-in-out infinite, fadeSlideUp 1s ease 0.2s both;
+                         }
+
+                         .maintenance-title {
+                              font-size: clamp(1.4rem, 6vw, 3rem);
+                              font-weight: 700;
+                              letter-spacing: -0.02em;
+                              margin: 0;
+                              background: linear-gradient(90deg, #ffffff, #888888, #ffffff, #cccccc);
+                              background-size: 200% auto;
+                              -webkit-background-clip: text;
+                              -webkit-text-fill-color: transparent;
+                              background-clip: text;
+                              animation: fadeSlideUp 1s ease 0.5s both, shimmer 4s linear infinite;
+                         }
+
+                         .maintenance-sub {
+                              font-size: clamp(0.7rem, 3vw, 1rem);
+                              color: rgba(255, 255, 255, 0.58);
+                              font-weight: 300;
+                              letter-spacing: 0.12em;
+                              text-transform: uppercase;
+                              margin: 0;
+                              animation: fadeSlideUp 1s ease 0.8s both;
+                         }
+
+                         .divider-line {
+                              width: clamp(48px, 18vw, 110px);
+                              height: 1px;
+                              background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+                              border: none;
+                              margin: 0;
+                              animation: fadeSlideUp 1s ease 1.1s both;
+                         }
+
+                         .cursor-blink {
+                              display: inline-block;
+                              width: 3px;
+                              height: 0.9em;
+                              background: #fff;
+                              margin-left: 6px;
+                              vertical-align: middle;
+                              animation: blink 1s step-end infinite;
+                         }
+
+                         .status-pill {
+                              display: flex;
+                              align-items: center;
+                              gap: 8px;
+                              background: rgba(255,255,255,0.04);
+                              border: 1px solid rgba(255,255,255,0.12);
+                              border-radius: 999px;
+                              padding: 7px 18px;
+                              font-size: clamp(0.6rem, 2.5vw, 0.78rem);
+                              color: rgba(255,255,255,0.5);
+                              letter-spacing: 0.14em;
+                              text-transform: uppercase;
+                              font-weight: 600;
+                              animation: fadeSlideUp 1s ease 1.4s both;
+                              backdrop-filter: blur(8px);
+                         }
+
+                         .status-dot {
+                              width: 7px;
+                              height: 7px;
+                              border-radius: 50%;
+                              background: #fff;
+                              flex-shrink: 0;
+                              animation: blink 1.5s ease-in-out infinite;
+                         }
+
+                         .maintenance-content {
+                              display: flex;
+                              flex-direction: column;
+                              align-items: center;
+                              gap: clamp(8px, 1.5vw, 14px);
+                              position: relative;
+                              z-index: 10;
+                              padding: 24px 20px;
+                              text-align: center;
+                              width: 100%;
+                              max-width: 680px;
+                         }
+
+                         @media (max-width: 480px) {
+                              .orbit-ring { border-width: 0.5px; }
+                              .maintenance-content { padding: 20px 16px; }
+                         }
+                    0:{"P":null,"b":"dAu7k40vIfOx3IdE8RWZ2","p":"","c":["","servicess"],"i":false,"f":[[["",{"children":["servicess",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a8149adc1db76b6c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/a405740e76272ede.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"__className_f1435f","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preload","href":"/fonts/Poppins-700.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":[\"Organization\",\"LocalBusiness\"],\"@id\":\"https://gravityfilms.space\",\"name\":\"Gravity Films\",\"url\":\"https://gravityfilms.space\",\"logo\":\"https://gravityfilms.space/logo.png\",\"image\":\"https://gravityfilms.space/share.png\",\"description\":\"Creative digital content agency specializing in fashion brands and e-commerce shoots\",\"foundingDate\":\"2020\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Siyaram Skyline, Near Our Lady Of Help English School, Samarvarni\",\"addressLocality\":\"Silvassa\",\"addressRegion\":\"Dadra and Nagar Haveli\",\"postalCode\":\"396230\",\"addressCountry\":\"IN\"},\"contactPoint\":{\"@type\":\"ContactPoint\",\"telephone\":\"+919033535655\",\"email\":\"info@gravityfilms.space\",\"contactType\":\"customer service\"},\"sameAs\":[\"https://instagram.com/gravityfilmsin\",\"https://www.linkedin.com/company/gravityfilms\",\"https://twitter.com/gravityfilmsin\"],\"priceRange\":\"₹₹₹\",\"serviceType\":[\"Digital Content Creation\",\"Photography\",\"Videography\",\"Brand Strategy\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"url\":\"https://gravityfilms.space\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https://gravityfilms.space/search?q={search_term_string}\",\"query-input\":\"required name=search_term_string\"}}"}}]]}],["$","body",null,{"style":{"margin":0,"padding":0,"width":"100vw","height":"100vh","overflow":"hidden","background":"#000"},"children":[["$","style",null,{"children":"$2"}],"$L3"]}]]}]]}],{"children":["servicess","$L4",{"children":["__PAGE__","$L5",{},null,false]},null,false]},null,false],"$L6",false]],"m":"$undefined","G":["$7",[]],"s":false,"S":true}
+8:I[87555,[],""]
+9:I[31295,[],""]
+a:I[46829,["720","static/chunks/720-23b34f78722f45d4.js","855","static/chunks/855-66525099a7abb82e.js","424","static/chunks/424-81abdffd4a527e1f.js","144","static/chunks/app/servicess/page-e6af4d68cb7f62b4.js"],"default"]
+b:I[2570,["720","static/chunks/720-23b34f78722f45d4.js","855","static/chunks/855-66525099a7abb82e.js","424","static/chunks/424-81abdffd4a527e1f.js","144","static/chunks/app/servicess/page-e6af4d68cb7f62b4.js"],"default"]
+c:I[38542,["720","static/chunks/720-23b34f78722f45d4.js","855","static/chunks/855-66525099a7abb82e.js","424","static/chunks/424-81abdffd4a527e1f.js","144","static/chunks/app/servicess/page-e6af4d68cb7f62b4.js"],"default"]
+d:I[59665,[],"OutletBoundary"]
+f:I[74911,[],"AsyncMetadataOutlet"]
+11:I[59665,[],"ViewportBoundary"]
+13:I[59665,[],"MetadataBoundary"]
+14:"$Sreact.suspense"
+3:["$","div",null,{"className":"maintenance-bg","children":[["$","div",null,{"className":"orbit-ring","style":{"width":"min(560px, 88vmin)","height":"min(560px, 88vmin)","animationDuration":"30s"}}],["$","div",null,{"className":"orbit-ring","style":{"width":"min(840px, 130vmin)","height":"min(840px, 130vmin)","animationDuration":"50s","animationDirection":"reverse","opacity":0.6}}],["$","div",null,{"className":"orbit-ring","style":{"width":"min(1120px, 170vmin)","height":"min(1120px, 170vmin)","animationDuration":"80s"}}],[["$","div","0",{"className":"particle","style":{"width":4,"height":4,"left":"8%","animationDelay":"0s","animationDuration":"9s"}}],["$","div","1",{"className":"particle","style":{"width":7,"height":7,"left":"22%","animationDelay":"2s","animationDuration":"13s"}}],["$","div","2",{"className":"particle","style":{"width":3,"height":3,"left":"38%","animationDelay":"5s","animationDuration":"11s"}}],["$","div","3",{"className":"particle","style":{"width":6,"height":6,"left":"52%","animationDelay":"1s","animationDuration":"15s"}}],["$","div","4",{"className":"particle","style":{"width":4,"height":4,"left":"68%","animationDelay":"3.5s","animationDuration":"10s"}}],["$","div","5",{"className":"particle","style":{"width":8,"height":8,"left":"80%","animationDelay":"6s","animationDuration":"14s"}}],["$","div","6",{"className":"particle","style":{"width":3,"height":3,"left":"91%","animationDelay":"4s","animationDuration":"12s"}}],["$","div","7",{"className":"particle","style":{"width":5,"height":5,"left":"15%","animationDelay":"7s","animationDuration":"16s"}}]],["$","div",null,{"className":"maintenance-content","children":[["$","img",null,{"src":"/GravityFull2.png","alt":"Gravity Films","className":"logo-img"}],["$","hr",null,{"className":"divider-line"}],["$","h1",null,{"className":"maintenance-title","children":["Under Maintenance",["$","span",null,{"className":"cursor-blink"}]]}],["$","p",null,{"className":"maintenance-sub","children":"We'll be back soon — bigger & better"}],["$","div",null,{"className":"status-pill","children":[["$","span",null,{"className":"status-dot"}],"Work in progress"]}]]}]]}]
+4:["$","$1","c",{"children":[null,["$","$L8",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+5:["$","$1","c",{"children":[["$","main",null,{"children":["$","article",null,{"itemScope":true,"itemType":"http://schema.org/Article","aria-label":"Gravity Films Services We Offer to Our Clients","className":"main-content","role":"main","children":[["$","meta",null,{"itemProp":"headline","content":"Gravity Films - Services We Offer to Our Clients"}],["$","meta",null,{"itemProp":"description","content":"We offer a range of services including video production, photography, and post-production. Our team is dedicated to delivering high-quality content that meets your needs."}],["$","meta",null,{"itemProp":"author","content":"Gravity Films"}],["$","$La",null,{"children":["$","div",null,{"children":[["$","$Lb",null,{}],["$","$Lc",null,{}]]}]}]]}]}],null,["$","$Ld",null,{"children":["$Le",["$","$Lf",null,{"promise":"$@10"}]]}]]}]
+6:["$","$1","h",{"children":[null,[["$","$L11",null,{"children":"$L12"}],null],["$","$L13",null,{"children":["$","div",null,{"hidden":true,"children":["$","$14",null,{"fallback":null,"children":"$L15"}]}]}]]}]
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+e:null
+16:I[38175,[],"IconMark"]
+10:{"metadata":[["$","title","0",{"children":"Gravity Films | Creative Digital Content & Filmmaking Agency"}],["$","meta","1",{"name":"description","content":"Gravity Films is a creative digital content agency specializing in fashion brands, e-commerce shoots, and comprehensive digital branding solutions. Based in Silvassa, India."}],["$","meta","2",{"name":"keywords","content":"digital content, filmmaking, e-commerce shoots, fashion brands, digital branding, creative agency, Silvassa, video production, photography, brand strategy"}],["$","meta","3",{"name":"robots","content":"index, follow"}],["$","meta","4",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","meta","5",{"name":"geo.region","content":"IN-DN"}],["$","meta","6",{"name":"google-site-verification","content":"your-google-verification-code"}],["$","meta","7",{"name":"yandex-verification","content":"your-yandex-verification-code"}],["$","meta","8",{"property":"og:title","content":"Gravity Films | Creative Digital Content & Filmmaking Agency"}],["$","meta","9",{"property":"og:description","content":"Gravity Films is a creative digital content agency specializing in fashion brands, e-commerce shoots, and comprehensive digital branding solutions. Based in Silvassa, India."}],["$","meta","10",{"property":"og:url","content":"https://gravityfilms.space"}],["$","meta","11",{"property":"og:site_name","content":"Gravity Films"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://gravityfilms.space/share.png"}],["$","meta","14",{"property":"og:image:width","content":"1200"}],["$","meta","15",{"property":"og:image:height","content":"630"}],["$","meta","16",{"property":"og:image:alt","content":"Gravity Films Logo"}],["$","meta","17",{"property":"og:image:type","content":"image/png"}],["$","meta","18",{"property":"og:type","content":"website"}],["$","meta","19",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","20",{"name":"twitter:site","content":"@gravityfilmsin"}],["$","meta","21",{"name":"twitter:creator","content":"@gravityfilmsin"}],["$","meta","22",{"name":"twitter:title","content":"Gravity Films | Creative Digital Content & Filmmaking Agency"}],["$","meta","23",{"name":"twitter:description","content":"Gravity Films is a creative digital content agency specializing in fashion brands, e-commerce shoots, and comprehensive digital branding solutions. Based in Silvassa, India."}],["$","meta","24",{"name":"twitter:image","content":"https://gravityfilms.space/share.png"}],["$","meta","25",{"name":"twitter:image:alt","content":"Gravity Films Logo"}],["$","link","26",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"32x32"}],["$","$L16","27",{}]],"error":null,"digest":"$undefined"}
+15:"$10:metadata"
